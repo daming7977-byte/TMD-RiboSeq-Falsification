@@ -1,0 +1,42 @@
+DATASET = GSE300977
+
+AUTHOR_METHOD =
+plastid crossmap-derived mappability mask
+one mismatch allowed
+
+AUTHOR_REPORTED_CROSSMAP_K = NOT REPORTED
+
+PUBLIC_CODE_SEARCH =
+No crossmap command or explicit k value found in LOCL-TL-analysis repository.
+
+PLASTID_VERSION = 0.6.1
+
+SOFTWARE_DEFAULT_CROSSMAP_K = 29
+SOFTWARE_DEFAULT_OFFSET = 14
+
+FORMAL_IMPLEMENTATION =
+CROSSMAP_K = 29
+CROSSMAP_MISMATCHES = 1
+
+K_SELECTION_RATIONALE =
+Because the author did not report an explicit crossmap k value,
+the documented plastid 0.6.1 default k=29 is retained rather than
+introducing a user-selected non-default value.
+
+PREVIOUS_K27_CONTRACT =
+SUPERSEDED before crossmap execution and before biological result viewing.
+
+CROSSMAP_BOWTIE =
+Bowtie 1.1.2 exact author-era mapping binary
+
+COUNTING_RULE =
+--min_length 27
+--max_length 36
+--center
+--nibble 13
+
+BIOLOGICAL_IDENTITY_REVEAL = LOCKED
+TMD_RESULT_VIEWED = FALSE
+CROSSMAP_RESULT_VIEWED = FALSE
+
+RESULT_INFORMED_PARAMETER_RETUNING = PROHIBITED

@@ -1,0 +1,63 @@
+GSE300977 DUPLICATE GENOMIC TMD ANCHOR ADJUDICATION CONTRACT V1
+
+PRIMARY ANALYTIC UNIT:
+Unique genomic TMD anchor defined by:
+
+chrom
+strand
+anchor_genomic_start0
+
+RATIONALE:
+Different transcript isoforms may map frozen TMDs onto the same genomic
+anchor. Because GSE300977 read counts are genomic, identical genomic
+anchors must not be counted multiple times as independent biological
+observations.
+
+PRIMARY ALL-TMD ANALYSIS:
+Each unique genomic anchor contributes exactly once.
+
+DUPLICATE COLLAPSE:
+All rows sharing the same chrom + strand + anchor_genomic_start0 are
+collapsed into one genomic-anchor record.
+
+NO TRANSCRIPT IS CHOSEN AS A REPRESENTATIVE.
+
+METADATA PRESERVATION:
+All contributing target transcripts, genes, TMD indices, position
+classes, and genomic TMD blocks are retained as aggregated metadata.
+
+FIRST / INTERNAL STRATIFIED ANALYSIS:
+If all source rows at a unique genomic anchor agree on
+TMD_position_class, the consensus FIRST or INTERNAL classification is
+retained.
+
+If source rows disagree between FIRST and INTERNAL:
+position_class_consensus = MIXED
+
+MIXED anchors:
+- retained in primary ALL-TMD analysis
+- excluded from FIRST-only and INTERNAL-only stratified analyses
+
+GENE-LEVEL ANALYSIS:
+If exactly one gene_id maps to the unique genomic anchor, gene identity
+is retained.
+
+If multiple gene_ids map to the same genomic anchor:
+gene_assignment = AMBIGUOUS_MULTI_GENE
+
+Such anchors:
+- retained in coordinate-level ALL-TMD analysis
+- excluded from analyses requiring unique gene assignment
+
+FULL TMD BLOCK DIFFERENCES:
+Differences in transferred TMD end position or exon-block representation
+do not alter genomic anchor identity because the primary anchor is the
+frozen N-terminal TMD codon coordinate.
+
+PROHIBITED:
+No choice of favored transcript.
+No result-dependent transcript collapse.
+No removal based on TMD signal.
+No change after biological signal inspection.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

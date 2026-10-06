@@ -1,0 +1,10 @@
+{
+  "core_pass": false,
+  "hl_90_lower": -0.047539474938730786,
+  "hl_90_upper": 0.0824545738720914,
+  "hodges_lehmann": 0.01738081326046751,
+  "median_D": -0.0019353048627819835,
+  "n_pairs": 1664,
+  "n_transcripts": 810,
+  "wilcoxon_p_greater": 0.3309387986642924
+}

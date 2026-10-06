@@ -1,0 +1,2 @@
+footprint_nt	A_offset_nt	genes	anchors	endpoint_statistic	CI95_lower	CI95_upper	bootstrap_draws	seed	frozen_verdict	null_interpretation	sign_vs_primary	sensitivity_assessment
+28	15	304	946	0.03999280030231667	-0.10472893368959985	0.18860158067168287	10000	5957314	NO_DIRECTIONAL_CHANGE_SUPPORT	NO_SUPPORTED_ENDPOINT_CHANGE	CONCORDANT	INCONCLUSIVE_CONCORDANT_NULL

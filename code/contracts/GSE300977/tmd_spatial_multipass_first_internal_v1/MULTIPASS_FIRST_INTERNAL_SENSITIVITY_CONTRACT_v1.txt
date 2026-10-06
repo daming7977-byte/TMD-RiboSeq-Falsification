@@ -1,0 +1,88 @@
+GSE300977 MULTI-PASS-ONLY FIRST VS INTERNAL SENSITIVITY V1
+
+STATUS:
+Post-reveal topology-composition sensitivity analysis.
+
+PURPOSE:
+Determine whether the previously observed FIRST-vs-INTERNAL spatial
+differences persist after removing the inherent composition difference
+that INTERNAL TMDs occur only in multi-pass proteins whereas FIRST TMDs
+can occur in both single-pass and multi-pass proteins.
+
+AUTHORITATIVE TOPOLOGY:
+Frozen pass_class from
+FORMAL_TMD_ANCHOR_CANDIDATES_v1p1.tsv
+
+Allowed pass_class:
+SINGLE_PASS
+MULTI_PASS
+
+MULTI-PASS-ONLY UNIT:
+A geometry-resolved paired real/pseudo unit is retained only if every
+contributing frozen target transcript has pass_class = MULTI_PASS.
+
+If contributing target transcripts contain both SINGLE_PASS and
+MULTI_PASS classifications:
+topology_class = MIXED_TOPOLOGY
+and the unit is excluded from the multi-pass-only analysis.
+
+No representative transcript is chosen.
+
+TMD POSITION CLASS:
+Within MULTI_PASS units:
+FIRST = position_class_consensus FIRST
+INTERNAL = position_class_consensus INTERNAL
+MIXED position class is excluded from FIRST-vs-INTERNAL comparison.
+
+CENTERS:
+-30,-15,0,+15,+30,+45,+60,+75,+90,+105,+120
+
+ELIGIBILITY:
+Use exactly the already-frozen structural and Crossmap eligibility.
+
+COUNTING:
+Reuse completed secondary geometry-density checkpoints.
+
+No BAM recounting.
+
+No changes to:
+- read lengths 27-36
+- CenterMapFactory(nibble=13)
+- Crossmap
+- pseudo assignment
+- window geometry
+- center definitions
+
+ESTIMAND:
+Same frozen TMD-specific difference-in-differences D.
+
+For each center/location/replicate:
+D_FIRST_MULTI
+D_INTERNAL_MULTI
+
+TOPOLOGY-CONTROLLED CONTRAST:
+Delta_FI_MULTI =
+D_FIRST_MULTI - D_INTERNAL_MULTI
+
+BOOTSTRAP:
+10000 nonparametric unit-bootstrap resamples.
+
+FIRST and INTERNAL multi-pass populations are disjoint and are
+resampled independently.
+
+Seed base = 30097775.
+
+REPORT:
+Pointwise percentile 95% bootstrap intervals.
+
+No multiplicity-corrected positional significance is claimed.
+
+INTERPRETATION:
+This is a post-reveal confound-control sensitivity analysis.
+It does not replace the preregistered FIRST-vs-INTERNAL analysis.
+It does not replace the primary +75 result.
+
+NO CENTER PROMOTION.
+NO RESULT-DEPENDENT FILTERING.
+NO PARAMETER RESCUE.
+NO LIBRARY EXCLUSION.

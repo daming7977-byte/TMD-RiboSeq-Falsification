@@ -1,0 +1,7 @@
+design_row	GSM	title	assay	condition	exact_sirna	treatment_class	primary_model_included	model_formula	reference_level	coefficient	contrast	freeze_version
+1	GSM3900208	Ribo_NSC_1	Ribo-seq	Control	Control	Control	YES	~ condition	Control	conditionKnockdown	Knockdown-Control	stage0c_paper3_analysis_contract_v1_2026-08-25
+2	GSM3900209	Ribo_NSC_2	Ribo-seq	Control	Control	Control	YES	~ condition	Control	conditionKnockdown	Knockdown-Control	stage0c_paper3_analysis_contract_v1_2026-08-25
+3	GSM3900210	Ribo_NSC_3	Ribo-seq	Control	Control	Control	YES	~ condition	Control	conditionKnockdown	Knockdown-Control	stage0c_paper3_analysis_contract_v1_2026-08-25
+4	GSM3900211	Ribo_siP_1	Ribo-seq	Knockdown	siP1_1	Treatment_A	YES	~ condition	Control	conditionKnockdown	Knockdown-Control	stage0c_paper3_analysis_contract_v1_2026-08-25
+5	GSM3900212	Ribo_siP_2	Ribo-seq	Knockdown	siP2_1	Treatment_B	YES	~ condition	Control	conditionKnockdown	Knockdown-Control	stage0c_paper3_analysis_contract_v1_2026-08-25
+6	GSM3900213	Ribo_siP_3	Ribo-seq	Knockdown	siP2_4	Treatment_B	YES	~ condition	Control	conditionKnockdown	Knockdown-Control	stage0c_paper3_analysis_contract_v1_2026-08-25

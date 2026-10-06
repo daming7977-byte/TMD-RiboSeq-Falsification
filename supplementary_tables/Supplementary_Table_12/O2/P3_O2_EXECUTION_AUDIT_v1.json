@@ -1,0 +1,115 @@
+{
+  "contract_sha256": "4816f1bc0fc16ce3a2ffefeec6d210b727bc057a6ecbabd8c0d7c7be539952ac",
+  "runner_sha256": "b25e9ada3092b253aac37b1059b255f4135dd0857cd4b8881f919a4234645964",
+  "preexecution_freeze_sha256": "96796b7a1314785484d158dd05c56db0422de089e469c0328842ab7b508fcb53",
+  "input_hashes": [
+    {
+      "role": "o2_contract",
+      "path": "P3_POSTREVEAL_ORDINAL_O2_v1/00_CONTRACTS/P3_O2_WITHIN_CLUSTER_ORDINAL_LABEL_PERMUTATION_CONTRACT_v1.md",
+      "expected_sha256": "4816f1bc0fc16ce3a2ffefeec6d210b727bc057a6ecbabd8c0d7c7be539952ac",
+      "actual_sha256": "4816f1bc0fc16ce3a2ffefeec6d210b727bc057a6ecbabd8c0d7c7be539952ac",
+      "status": "PASS"
+    },
+    {
+      "role": "population",
+      "path": "P3_POSTREVEAL_ORDINAL_v1/02_PRECHECK/P3_O1_POPULATION_MAP_v1.tsv",
+      "expected_sha256": "4781a110b9b9c90511dad4b9669bbbbd7e6f6e70d8eb4bd3443ce7fcd62f70be",
+      "actual_sha256": "4781a110b9b9c90511dad4b9669bbbbd7e6f6e70d8eb4bd3443ce7fcd62f70be",
+      "status": "PASS"
+    },
+    {
+      "role": "density",
+      "path": "P3_ELIFE_UPGRADE/U4A_v1p1/U4A_BOTH_CLASS_ANCHOR_DENSITY_MATRIX_v1.tsv",
+      "expected_sha256": "74cd469ee6160c1103f2c3419201e810fc93d08b4ea32ae065154aa87fe0b6b7",
+      "actual_sha256": "74cd469ee6160c1103f2c3419201e810fc93d08b4ea32ae065154aa87fe0b6b7",
+      "status": "PASS"
+    },
+    {
+      "role": "o1_result",
+      "path": "P3_POSTREVEAL_ORDINAL_v1/03_RESULTS/P3_O1_BROAD_PRIMARY_RESULT_v1.tsv",
+      "expected_sha256": "4636d0ae18895f2e0516a684a9546658e459d402e823e3bb03dc95a3e7dca0d7",
+      "actual_sha256": "4636d0ae18895f2e0516a684a9546658e459d402e823e3bb03dc95a3e7dca0d7",
+      "status": "PASS"
+    },
+    {
+      "role": "o1_runner",
+      "path": "P3_POSTREVEAL_ORDINAL_v1/01_IMPLEMENTATION/run_p3_o1_v1.py",
+      "expected_sha256": "55ede5e29aad3a970409418e599f1aaaae95b73ba4e616dcaced3c755422d964",
+      "actual_sha256": "55ede5e29aad3a970409418e599f1aaaae95b73ba4e616dcaced3c755422d964",
+      "status": "PASS"
+    },
+    {
+      "role": "o1_contract",
+      "path": "P3_POSTREVEAL_ORDINAL_v1/00_CONTRACTS/P3_O1_INTERNAL_TMD_ORDINAL_CONTRACT_v1.md",
+      "expected_sha256": "2774304203db0fe4686066819831b9df855a75494b30bf4710fca670fc4527b3",
+      "actual_sha256": "2774304203db0fe4686066819831b9df855a75494b30bf4710fca670fc4527b3",
+      "status": "PASS"
+    }
+  ],
+  "started_utc": "2026-09-09T01:15:48.205606+00:00",
+  "completed_utc": "2026-09-09T01:17:13.439742+00:00",
+  "seed": 300977220,
+  "rng": "numpy.random.default_rng / PCG64",
+  "requested": 10000,
+  "valid": 10000,
+  "invalid": 0,
+  "verdict": "FROZEN_NULL_NOT_REJECTED",
+  "no_result_dependent_modification": true,
+  "protected_files_unchanged": true,
+  "protection": {
+    "protected_project_files": 8905,
+    "changed_or_missing_files": 0,
+    "new_files_outside_O2": 0,
+    "method": "lstat size/mtime_ns/symlink target; all contract-bound inputs separately SHA256 verified"
+  },
+  "structural_summary": {
+    "anchors": 554,
+    "clusters": 250,
+    "permutable_clusters": 114,
+    "nonpermutable_clusters": 136,
+    "anchors_in_permutable_clusters": 385,
+    "clusters_with_EARLY_and_LATE": 50,
+    "clusters_with_all_three_bins": 10,
+    "global_bin_counts": {
+      "EARLY_INTERNAL": 178,
+      "MID_INTERNAL": 124,
+      "LATE_INTERNAL": 252
+    }
+  },
+  "observed_reconstruction": [
+    {
+      "quantity": "replicate_1",
+      "reference_value": "-0.90304360883931745",
+      "reconstructed_value": "-0.90304360883931745",
+      "delta": "0",
+      "absolute_delta": "0",
+      "tolerance": 1e-12,
+      "status": "PASS"
+    },
+    {
+      "quantity": "replicate_2",
+      "reference_value": "-0.14712492793885701",
+      "reconstructed_value": "-0.14712492793885701",
+      "delta": "0",
+      "absolute_delta": "0",
+      "tolerance": 1e-12,
+      "status": "PASS"
+    },
+    {
+      "quantity": "mean",
+      "reference_value": "-0.52508426838908717",
+      "reconstructed_value": "-0.52508426838908717",
+      "delta": "0",
+      "absolute_delta": "0",
+      "tolerance": 1e-12,
+      "status": "PASS"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "python_executable": "HISTORICAL_RUNTIME/python3",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  }
+}

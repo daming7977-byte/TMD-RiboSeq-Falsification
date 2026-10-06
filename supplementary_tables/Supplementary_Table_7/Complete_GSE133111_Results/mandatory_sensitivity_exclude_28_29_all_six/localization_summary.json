@@ -1,0 +1,11 @@
+{
+  "LDB_pass": false,
+  "NGS_90_lower": -0.010038708010094072,
+  "NGS_90_upper": 0.06939105092364192,
+  "NGS_epsilon": 0.2630344058337938,
+  "NGS_pass": true,
+  "ldb_wilcoxon_p_greater": 0.744564022312778,
+  "median_P": 0.02202965797557231,
+  "median_P_minus_Q": -0.03656561868109594,
+  "n_transcripts": 396
+}

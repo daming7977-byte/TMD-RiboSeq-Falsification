@@ -1,0 +1,20 @@
+{
+  "estimand": "BROAD_11CENTER_LATE_MINUS_EARLY_MITO_MINUS_ER",
+  "replicate_1": -0.9030436088393174,
+  "replicate_2": -0.147124927938857,
+  "mean": -0.5250842683890872,
+  "gene_cluster_percentile_CI95_lower": -0.9857085526697732,
+  "gene_cluster_percentile_CI95_upper": -0.03920705510707291,
+  "valid_iterations": 10000,
+  "invalid_iterations": 0,
+  "analysis_stage": "POST_REVEAL_ORDINAL_SENSITIVITY",
+  "technical_status": "PASS",
+  "scientific_binary_verdict": "NOT_DEFINED_IN_O1_CONTRACT",
+  "observed_direction": "NEGATIVE",
+  "replicate_1_sign": -1,
+  "replicate_2_sign": -1,
+  "interval_position": "ENTIRELY_NEGATIVE",
+  "result_dependent_exclusion": false,
+  "pseudocount": false,
+  "primary_GSE300977_changed": false
+}

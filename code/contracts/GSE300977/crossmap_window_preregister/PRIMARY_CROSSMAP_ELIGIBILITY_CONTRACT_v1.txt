@@ -1,0 +1,46 @@
+GSE300977 PRIMARY CROSSMAP ELIGIBILITY CONTRACT V1
+
+STATUS:
+Frozen before TMD-centered biological signal inspection.
+
+PRIMARY CENTER:
++75
+
+ALL-TMD PRIMARY ELIGIBILITY:
+A structurally valid real TMD unit is eligible iff:
+crossmap_unmasked_nt >= 1.
+
+Fully Crossmap-masked real windows are excluded because no observable
+counting position remains.
+
+PAIRED REAL-PSEUDO PRIMARY ELIGIBILITY:
+A unique real geometry unit is eligible iff:
+1. real_crossmap_unmasked_nt >= 1
+2. every distinct frozen pseudo geometry associated with that real unit
+   has crossmap_unmasked_nt >= 1.
+
+PARTIAL MASKING:
+Partially masked windows remain eligible.
+
+COUNT DENSITY:
+For each geometry and library:
+
+density =
+sum of author-style center-mapped fractional counts over unmasked positions
+/
+number of unmasked positions.
+
+Masked positions contribute neither counts nor denominator.
+
+MULTIPLE PSEUDO GEOMETRIES:
+For a real unit with multiple distinct pseudo geometries:
+pseudo density =
+unweighted arithmetic mean of the distinct pseudo densities.
+
+No pseudo is selected or discarded.
+
+NO MINIMUM UNMASKED-NT THRESHOLD OTHER THAN >=1.
+NO RESULT-DEPENDENT FILTERING.
+NO BIOLOGICAL COUNT INSPECTION BEFORE FREEZE.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

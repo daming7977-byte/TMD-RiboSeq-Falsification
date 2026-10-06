@@ -1,0 +1,94 @@
+schema_version: 1
+status: FROZEN_BEFORE_FIRST_TMD_BIOLOGICAL_REVEAL
+frozen_at: 2026-08-21T15:24:00+09:00
+project: GSE106329_SRP_TMD_Spatial
+governing_preregistration:
+  path: frozen/phase_b/phase_b_preregistration_amended_v1.yaml
+  sha256: c722911d86a17702b843906f827b5e87a0f1cdaa4e2bb26b8e7e5e175d1fbe76
+  may_override_governing_preregistration: false
+biological_results_generated_or_viewed_before_this_lock: false
+
+scope:
+  primary_question: Does_acute_SRP_depletion_generate_a_credible_and_reproducible_TMD_centered_spatial_ribosome_occupancy_remodeling_signal_in_GSE106329
+  permitted:
+    - Sec63_primary_positional_scan
+    - frozen_technical_sensitivities
+    - noCHX_robustness
+    - Ubc6_descriptive_support
+    - prespecified_artifact_diagnostics
+    - coverage_population_diagnostics
+  prohibited:
+    - ER_targeting_fate_integration
+    - mitochondrial_mistargeting_association
+    - TMD_sequence_or_topology_association
+    - candidate_ranking
+    - secondary_datasets
+    - wet_lab_design
+
+stage_decision_hierarchy:
+  PROVISIONAL_GO_in_this_report: first_spatial_gate_only_authorizes_targeting_fate_stage
+  not_equivalent_to: [GSE106329_PROVISIONAL_GO, PAPER3_BIOLOGICAL_GO]
+  full_GSE106329_PROVISIONAL_GO_still_requires: [non_circular_biological_linkage, at_least_4_stable_candidates]
+
+primary_inference:
+  point_estimand: equal_TMD_weight_mean_of_within_TMD_30min_minus_0min_delta_log2_local_over_background
+  cluster: gene
+  cluster_robust_SE: finite_sample_CR0_for_equal_TMD_mean
+  pointwise_interval: estimate_plus_or_minus_1.96_cluster_robust_SE
+  simultaneous_interval: studentized_gene_cluster_bootstrap_maxT
+  bootstrap_iterations: 10000
+  bootstrap_seed: 106329
+  two_sided_alpha: 0.05
+
+sensitivity_interpretation:
+  locked_band_direction_retained: sensitivity_locked_band_mean_has_same_sign_as_primary
+  reversal: sensitivity_locked_band_mean_has_opposite_sign_to_primary
+  spatial_structure_retained: sensitivity_has_same_direction_primary_rule_band_overlapping_at_least_one_primary_band_center
+  absence_of_sensitivity_band_without_reversal: attenuation_or_ambiguity_not_automatic_reversal
+  no_parameter_reselection: true
+
+noCHX_interpretation:
+  supports: same_direction_primary_rule_band_overlaps_primary_locked_band
+  compatible: no_opposite_primary_rule_band_and_locked_band_mean_not_significantly_opposite
+  reversed: opposite_direction_primary_rule_band_overlaps_primary_locked_band_or_opposite_locked_band_mean_with_95pct_cluster_interval_excluding_zero
+
+Ubc6_interpretation:
+  role: descriptive_or_supportive_only
+  directional_support: locked_band_mean_same_sign_as_primary
+  formal_validation_language_prohibited: true
+  cannot_rescue_primary_failure: true
+
+artifact_operationalization:
+  pseudo_anchor_comparable_or_stronger:
+    - pseudo_anchor_primary_rule_band_exists_with_same_or_opposite_direction_and_absolute_peak_at_least_primary_absolute_peak
+    - pseudo_anchor_maximum_absolute_effect_at_least_primary_maximum_absolute_effect
+  coordinate_null:
+    empirical_tail: plus_one_corrected
+    observed_more_extreme_requires:
+      - maximum_absolute_effect_empirical_p_below_0.05
+      - absolute_locked_band_mean_effect_empirical_p_below_0.05
+    longest_same_direction_run: required_descriptive_diagnostic_not_independent_gate
+  leave_one_gene_out:
+    material: direction_reversal_or_at_least_25pct_attenuation_of_locked_band_mean
+  insufficient_prespecified_negative_control_eligibility: HOLD
+
+coverage_diagnostics:
+  primary_population: position_specific_frozen_eligibility
+  report: [TMD_count_by_position, gene_count_by_position, adjacent_membership_Jaccard, peak_vs_each_position_Jaccard, neighboring_TMD_fraction, background_and_local_count_summaries]
+  composition_decomposition: recompute_adjacent_position_changes_on_shared_members_only_without_redefining_primary_population
+  fixed_all_positions_population: descriptive_only_if_nonempty
+
+decision_for_this_report:
+  PROVISIONAL_GO_requires_all:
+    - primary_scan_global_spatial_band
+    - approximately_absolute_effect_at_least_0.25_with_spatial_coherence
+    - no_frozen_UMI_or_Psite_sensitivity_reversal
+    - noCHX_not_reversed
+    - pseudo_anchor_and_coordinate_null_do_not_provide_comparable_structure
+    - no_single_gene_material_influence
+    - coverage_composition_does_not_offer_a_simpler_explanation
+  NO_GO_FOR_GSE106329_if:
+    - no_primary_scan_global_spatial_band
+  HOLD_if:
+    - primary_band_exists_but_any_required_robustness_or_artifact_diagnostic_is_ambiguous_or_fails
+  marginal_policy: HOLD_or_NO_GO_as_defined_above_never_upgrade_to_GO

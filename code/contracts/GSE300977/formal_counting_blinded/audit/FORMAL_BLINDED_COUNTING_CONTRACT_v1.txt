@@ -1,0 +1,31 @@
+GSE300977 FORMAL BLINDED CDS-START COUNTING CONTRACT V1
+
+DATE = Thu Sep  3 23:01:49 JST 2026
+
+BIOLOGICAL_IDENTITY = LOCKED
+
+LIBRARIES = B01-B12
+INPUT = NH:i:1 unique BAM
+ROI = periodicity_blinded/roi_masked_v2/GRCh38_104_cds_start_crossmap_rois.txt
+ROI_SHA256 = 0f89aee14812df3e4a79c1173c90eeaf82d81b1f5268962f08de9cb98918b0cc
+
+READ_LENGTH_MIN = 27
+READ_LENGTH_MAX = 36
+
+COUNTFILE_FORMAT = BAM
+MAPPING_RULE = CenterMapFactory
+CENTER = TRUE
+NIBBLE = 13
+
+NORMALIZE_OVER = 20 50
+MIN_COUNTS = 10
+
+NOTE:
+normalize_over and min_counts affect auxiliary normalized/metagene
+outputs only. Formal engineering validation is based on raw count and
+mask matrices generated with --keep.
+
+EXPECTED_ROIS = 5130
+EXPECTED_WINDOW_WIDTH = 100
+
+BIOLOGICAL_REVEAL = PROHIBITED DURING THIS STAGE

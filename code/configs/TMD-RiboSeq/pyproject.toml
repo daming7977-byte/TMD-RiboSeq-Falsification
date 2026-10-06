@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmdriboseq"
+version = "1.1.0.dev0"
+description = "Configurable analysis of TMD-centered local ribosome occupancy in Ribo-seq data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Ming Li"}
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "pysam>=0.22",
+  "PyYAML>=6.0",
+  "scipy>=1.10",
+  "statsmodels>=0.14"
+]
+
+[project.urls]
+Repository = "https://github.com/daming7977-byte/TMD-RiboSeq"
+Documentation = "https://github.com/daming7977-byte/TMD-RiboSeq/tree/v1.0.0/docs"
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+tmdriboseq = "tmdriboseq.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tmdriboseq = ["r_scripts/*.R"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

@@ -1,0 +1,88 @@
+GSE300977 PRIMARY +75 COUNTING IMPLEMENTATION CONTRACT V1
+
+STATUS:
+Frozen before first TMD-centered biological signal reveal.
+
+PRIMARY SCIENTIFIC CONTRACT SHA256:
+6faa60107a5034f38aff5d1b586784dbb315335e84897567d16620a0d051f7eb
+
+PRIMARY PREREGISTRATION CLOSURE SHA256:
+48f952b8719c0e21ee168b6aa74c7f33c4c8264abc8e06a281cd099b1ae43bb1
+
+PRIMARY PAIRED ELIGIBLE TABLE SHA256:
+ba47f5a42f9923743723cf7d6a0b1483a27acaa091b0e32e8954f3f0005f7ab5
+
+UNIVERSE:
+9098 frozen Crossmap-eligible geometry-resolved real-pseudo units.
+
+SOFTWARE:
+plastid 0.6.1
+
+READ INPUT:
+B01-B12 NH1 unique BAMs.
+
+READ LENGTH:
+27-36 nt inclusive.
+
+MAPPING:
+CenterMapFactory(nibble=13).
+
+GEOMETRY:
+Exact frozen spliced genomic window geometry.
+
+COUNT VECTOR:
+SegmentChain.get_counts(..., stranded=True).
+
+CROSSMAP:
+Use only the already-frozen 31-bit Crossmap mask vectors in the
+eligible table.
+
+bit 0 = retain
+bit 1 = exclude
+
+No Crossmap is recomputed during biological counting.
+
+DENSITY:
+sum of fractional counts at unmasked positions /
+number of unmasked positions.
+
+MULTIPLE PSEUDOS:
+Distinct pseudo densities are averaged equally within each library.
+
+LIBRARY NORMALIZATION:
+No additional library-size normalization is applied to the primary
+difference-in-differences estimand.
+
+The pulldown/input library-specific multiplicative scaling factor
+cancels algebraically between the matched real and pseudo terms.
+
+COUNTING EXECUTION:
+Libraries are processed one at a time.
+Per-library frozen geometry count tables are checkpointed before the
+next library is opened.
+
+BOOTSTRAP:
+10000 exact nonparametric unit-bootstrap resamples.
+
+A bootstrap resample of N units is represented by multinomial
+multiplicity weights with:
+N = 9098
+p_i = 1/9098
+
+This is exactly equivalent to sampling 9098 units with replacement.
+
+The same multiplicity vector is simultaneously applied to every
+library, location, fraction, and replicate.
+
+Bootstrap seed:
+30097775
+
+Bootstrap batch size:
+200
+
+No pseudocount.
+No library exclusion.
+No result-dependent filtering.
+No parameter change after reveal.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

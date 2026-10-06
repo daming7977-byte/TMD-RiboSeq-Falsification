@@ -1,0 +1,17 @@
+file	changed_lines	scope
+scripts/GSE300977/mapping_full_blinded/run_full_one_v2.sh	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE300977/periodicity_blinded/run_crossmap_k29_mm1.sh	2	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE300977/formal_counting_blinded/run_formal_blinded_counting_v1.sh	2	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE300977/tmd_anchor_preregister/build_exact_protein_bridge_v1.py	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE300977/tmd_anchor_preregister/materialize_tmd_bridge_candidates_v1p1.py	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE300977/tmd_anchor_preregister/build_human_window_geometry_v2.py	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE300977/pseudo_transfer_preregister/transfer_pseudo_pairs_to_ensembl104_v2.py	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+figure_scripts/GSE300977/paper3_figures_v1/figure1/make_figure1_v2.py	4	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/TMD-RiboSeq/scripts/stage0c/audit_only_build_primary_tmd_anchor_table.py	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/TMD-RiboSeq/scripts/stage1/paper3_stage1_adapter_v1.py	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE133111/qc/deeptmhmm_full/run_deeptmhmm_full_biolib.py	2	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE133111/qc/deeptmhmm_full/build_deeptmhmm_full_input.py	7	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+scripts/GSE133111/qc/deeptmhmm_full/validate_normalize_deeptmhmm_full.py	5	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+contracts/TMD-RiboSeq/docs/STAGE0C_PAPER3_ANALYSIS_CONTRACT_FREEZE_2026-08-25.tsv	1	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv
+contracts/TMD-RiboSeq/docs/STAGE0C_PAPER3_ANALYSIS_CONTRACT_FREEZE_2026-08-25.md	2	Path prefix substitution only; source and packaged hashes in ORIGIN_MANIFEST.tsv

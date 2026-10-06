@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "analysis_role": "outcome-informed post-reveal region-level robustness",
+  "population_mode": "AVAILABLE_CASE",
+  "frozen_project": "paper3_GSE300977_raw",
+  "input_sha256": {
+    "frozen_intermediates/region_composite_project/tmd_anchor_preregister/bridge/FORMAL_TMD_ANCHOR_CANDIDATES_v1p1.tsv": "1719eb7ffb97f169bfbf542457f52320a3cdc7d4b7fb54d9a2ae246f390e872b",
+    "frozen_intermediates/region_composite_project/crossmap_window_preregister/output/GSE300977_PAIRED_REAL_PSEUDO_CROSSMAP_MASK_AUDIT_v1.tsv": "67e0e3e2ee5383eb274192c60c14d166308ccc8cc68038e990718d8be63d88b6",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/output/SECONDARY_11CENTER_GEOMETRY_CATALOG_v1.tsv": "b81e31049498806fae5fc4516433eacce1c8de6aa8c6f14b23a08c993d5151a8",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B01.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "33b98b1773297b53d008d25a9b04f15c25340e8c29c5ae1ea2c55cd9c3dd92b5",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B02.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "0f78530e370af6b9a2c605d449ef839cd5ca69a318b9e98b013acc503ddc1c89",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B03.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "1d941d1010d3785143b1a962b2258c3d0a5430a339030c352aeedc362f9e01ab",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B04.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "f1b056e151f876a18cf877ef98c758d3ddf1af86e49e9a0b2e4715193b58c039",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B05.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "1d5964795a91dff65a95233557570dd7779ac332a6086d1c0278828b559e342a",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B06.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "7684f3b1e45c5b0dcd37c75419f51f899c6d7b332b6ed951856f683f53a519da",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B07.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "847a2bbbabfc22095e42f370672ccf6aafa5c95325df014ecd8a2b58177d8a09",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B08.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "c9b085106a8f38905d5648082277ca2b4ee0a436f31c7524da678b7fe33e2760",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B09.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "cc498c6f71e7aeee437aa5256c0a0d5a906cd7ebf407f63e31b4805fe68dede5",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B10.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "8c02a695e455828bec9cc5812fccbbcc090fe6c1493e5be0f84d9dfcb51f5bf9",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B11.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "82ede92485843cba9b6da97c44c56e3a59129e7fd56016ae01582b978272f625",
+    "frozen_intermediates/region_composite_project/tmd_spatial_secondary_scan_v1/geometry_counts/B12.SECONDARY_GEOMETRY_DENSITIES_v1.tsv": "c03020ffd411f30136036aa74fbba43c4c90c65c6c11369dc0da393cdd0b19f0"
+  },
+  "outputs": {
+    "summary": {
+      "path": "reproduction_output/available_case/REGION_COMPOSITE_SUMMARY_v1.tsv",
+      "sha256": "84a23602aeae7a4b2e76f598d22fb3e1d6c4a7bfb7e7ec094d211a8a3fba2a70"
+    },
+    "center_estimates": {
+      "path": "reproduction_output/available_case/REGION_CENTER_ESTIMATES_v1.tsv",
+      "sha256": "444bf6b45477c57f699d0fa5cdffe0e109734f5c621b8994e64ce1beb0950450"
+    },
+    "influence": {
+      "path": "reproduction_output/available_case/REGION_COMPOSITE_GENE_INFLUENCE_v1.tsv",
+      "sha256": "f3eb5233172a50bcbf26922f6bf9fc5194406d4bd42862f3eb3f642016a89206"
+    },
+    "inventory": {
+      "path": "reproduction_output/available_case/REGION_COMPOSITE_UNIT_INVENTORY_v1.tsv",
+      "sha256": "b2541b72a751393b71ff8bb91f5c1b60438c6ac6e3d9eae950a9c367e7f02e41"
+    },
+    "influence_summary": {
+      "path": "reproduction_output/available_case/REGION_COMPOSITE_INFLUENCE_SUMMARY_v1.tsv",
+      "sha256": "1a61bf3b04d88522f4e7793aa40e4c6eeafbc717e7b9dd10c4efcf6921a00331"
+    }
+  },
+  "bootstrap_resamples": 10000,
+  "seeds": {
+    "PLATEAU_90_120": 30097890,
+    "BROAD_60_120": 30097860
+  },
+  "regions": {
+    "PLATEAU_90_120": [
+      90,
+      105,
+      120
+    ],
+    "BROAD_60_120": [
+      60,
+      75,
+      90,
+      105,
+      120
+    ]
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "analysis_files_sha256": {
+    "script": "a4e347e7bfc7080ddfd65e6527e9a389ba548415a5ae58cc5964687121fc553b",
+    "contract": "5b26abbfa605c1520dc65656be7ee927093ea43d31c027be13e294010142b488",
+    "amendment": "d217c455f863e559329f80600a4b08fc4c5251aa5522f88d44472412426bcedc"
+  }
+}

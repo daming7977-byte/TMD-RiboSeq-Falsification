@@ -1,0 +1,56 @@
+GSE300977 TMD WINDOW CROSSMAP MASK CONTRACT V1
+
+STATUS:
+Frozen before TMD-centered biological signal inspection.
+
+AUTHORITATIVE MASK:
+periodicity_blinded/crossmap/
+GRCh38_release104_29_1_crossmap.sorted.bb
+
+AUTHORITATIVE BIGBED SHA256:
+b6a0f58dcbc0c2503d5549234db33f89683e5a1aeb8b62ef8646257e83fe3fd8
+
+SOURCE:
+plastid crossmap, k=29, mismatches=1, offset=14.
+
+MASK SEMANTICS:
+Crossmap annotations mark genomic positions that produce ambiguously
+mapping reads under the frozen alignment/mappability configuration.
+
+Crossmap-covered positions are positions TO EXCLUDE, not positions to
+retain.
+
+STRAND:
+Mask lookup is stranded.
+Only Crossmap features on the same strand as the TMD/pseudo window are
+applied.
+
+WINDOW:
+Each structurally valid real or pseudo window has exactly 31 transcript-
+oriented nucleotides.
+
+For each exact genomic/spliced window geometry:
+- determine which of the 31 positions overlap the frozen Crossmap mask;
+- masked_nt = number of positions overlapping Crossmap;
+- unmasked_nt = 31 - masked_nt;
+- retain a 31-bit mask vector in transcript 5'-to-3' orientation.
+
+BIT DEFINITION:
+1 = Crossmap-masked position
+0 = unmasked position
+
+PARTIAL MASKING:
+Partial Crossmap overlap does NOT by itself exclude the complete window
+during this annotation audit.
+
+No threshold based on masked_nt is chosen from biological counts.
+
+The formal downstream counting/statistical contract will use this frozen
+mask information before any TMD biological signal is inspected.
+
+NO NEW CROSSMAP.
+NO LENGTH-SPECIFIC REMAPPING.
+NO MASK PARAMETER CHANGES.
+NO RESULT-DEPENDENT FILTERING.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

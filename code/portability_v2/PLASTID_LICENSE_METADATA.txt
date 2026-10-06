@@ -1,0 +1,4 @@
+Name: plastid
+Version: 0.6.1
+License: BSD 3-Clause
+Classifier: License :: OSI Approved :: BSD License

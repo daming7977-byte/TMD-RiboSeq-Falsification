@@ -1,0 +1,7 @@
+# Existing extension files and reproduction boundary
+
+The registry targets are present byte-for-byte and match their previously recorded SHA256 values. Contracts, annotation/pseudo/support records and saved result-level tables are included under Frozen_Extension_Records. Original execution scripts are in Code_for_Review/historical_extension_runners (code/historical_extension_runners in the release).
+
+These scripts are historical implementations, not the main reproduction entry point. They retain their original path and dependency assumptions. GSE61012 requires the B2 alignment/calibration reference models and calibrated SAM files; GSE59573 requires A3 alignment/calibration definitions, reference models and per-run SAM files. Those upstream alignment/calibration products and their complete historical environment are not bundled here. The scripts also use the original table-writing Node environment, which is not promised by the pinned Python region environment. Do not run them without restoring and independently checking those documented dependencies. No portable binding or missing historical record has been invented.
+
+Reproduction depth here is frozen results and methods/source traceability, not a verified raw-to-result rerun. The main reproduction command recomputes only the separately packaged GSE300977 region composites. GSE106329 signal retention was stopped at its technical gate and has no biological result to reproduce. The extension verdicts do not test the full human FIRST-versus-INTERNAL mitochondrial-minus-ER interaction.

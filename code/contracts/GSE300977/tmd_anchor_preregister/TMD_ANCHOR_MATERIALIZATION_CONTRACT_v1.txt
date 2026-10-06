@@ -1,0 +1,59 @@
+GSE300977 TMD ANCHOR MATERIALIZATION CONTRACT V1
+
+INPUT:
+Frozen GSE133111 primary TMhelix anchors
++
+GSE300977 Ensembl104 exact-protein bridge.
+
+TRANSCRIPT ADMISSIBILITY:
+
+1. match_class must be:
+   SAME_ENST_EXACT
+   or
+   UNIQUE_EXACT_OTHER_ENST
+
+2. target transcript must map from exactly one source transcript.
+   Any target transcript collision is excluded.
+
+3. source and target protein lengths must be identical.
+
+4. target CDS length must equal exactly:
+   protein_length * 3
+
+5. target translated protein must contain no internal stop.
+
+6. every transferred TMD must satisfy:
+   0 <= aa_start0 < aa_end0_exclusive <= protein_length
+
+7. source feature must remain:
+   raw_deeptmhmm_label = TMhelix
+
+8. source roundtrip_match must remain YES.
+
+TRANSFERRED DEFINITIONS:
+
+TMD_index:
+preserved unchanged from frozen source.
+
+TMD_position_class:
+FIRST / INTERNAL preserved unchanged.
+
+TMD nucleotide interval in target CDS:
+start0 = aa_start0 * 3
+end0_exclusive = aa_end0_exclusive * 3
+
+Primary anchor:
+first nucleotide of the N-terminal codon of the TMD
+in transcript 5-prime-to-3-prime orientation.
+
+PROHIBITED:
+
+No fuzzy matching.
+No isoform rescue.
+No manual target choice.
+No sequence-alignment rescue.
+No new topology prediction.
+No result-dependent exclusions.
+No TMD signal inspection before anchor-table freeze.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

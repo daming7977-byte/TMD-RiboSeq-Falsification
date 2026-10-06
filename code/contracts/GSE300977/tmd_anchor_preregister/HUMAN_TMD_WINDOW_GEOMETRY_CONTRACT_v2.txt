@@ -1,0 +1,77 @@
+GSE300977 HUMAN TMD WINDOW GEOMETRY CONTRACT V2
+
+STATUS:
+Frozen before biological TMD signal inspection.
+
+ANCHOR:
+The TMD anchor remains the first nucleotide of the codon encoding the
+first residue of the accepted TMhelix.
+
+ANCHOR COORDINATES:
+TMD anchors remain defined relative to the translated CDS.
+No TMD anchor is moved.
+
+PRIMARY CENTER:
++75 nt.
+
+PRIMARY WINDOW:
+[TMD+60,TMD+91), width 31 nt.
+
+CENTERS:
+-30,-15,0,+15,+30,+45,+60,+75,+90,+105,+120
+
+WINDOW:
+[anchor + center -15, anchor + center +16)
+
+AUTHORITATIVE HUMAN WINDOW SPAN:
+The frozen GSE133111 source field CDS_length_nt.
+
+TARGET TRANSLATION RULE:
+Let:
+source_span = frozen GSE133111 CDS_length_nt
+target_translated_CDS = Ensembl104 translated CDS length
+
+Allowed differences:
+source_span - target_translated_CDS = 0 or 3 only.
+
+CASE 0:
+No additional sequence is appended.
+
+CASE 3:
+The target transcript must possess an exact 3-nt Ensembl104 stop_codon.
+That annotated stop_codon is appended after the translated CDS in
+transcript 5'-to-3' orientation for window-geometry purposes only.
+
+IMPORTANT:
+The stop codon extension affects window admissibility and genomic
+window geometry only.
+
+It does NOT:
+- change protein sequence
+- change protein SHA
+- change TMD coordinates
+- change TMD anchor coordinates
+- change the exact-protein bridge
+
+STRUCTURAL VALIDITY:
+A 31-nt target window is valid iff:
+1. it lies completely inside the frozen human window span;
+2. it does not overlap another accepted formal TMD in the same target
+   transcript.
+
+The focal TMD does not invalidate its own window.
+
+NO CLIPPING.
+NO ZERO FILLING.
+NO FUZZY TRANSFER.
+NO RESULT-DEPENDENT WINDOW MOVEMENT.
+
+SOURCE REPRODUCTION GATE:
+For every formally transferred TMD, the regenerated 11-center target
+validity mask must exactly reproduce the frozen GSE133111
+real_scan_validity_mask.
+
+The regenerated +75 validity must exactly reproduce
+real_primary_window_valid.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

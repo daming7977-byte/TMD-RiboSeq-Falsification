@@ -1,0 +1,5 @@
+# Portable workspace layout
+
+The copies retain each source-relative directory tree under a logical dataset root. `REPRO_WORKSPACE/` replaces the original machine home prefix; `REPRO_ENV/` replaces its local environment prefix; `PAPER3_WORK_ROOT` replaces the home-based GSE300977 working directory. These are explicit configuration placeholders, not new verified execution paths. Stage scripts also rely on their original dataset working directories and cross-dataset relative layout. Review and bind these locations in an isolated reproduction workspace before execution.
+
+Contract hashes embedded in original scripts were retained, not silently rewritten. A path-redacted contract may therefore have a packaged hash different from the embedded frozen hash. Resolve portability and original-input identity checks before reproduction; do not bypass a scientific gate. The original hashes and every changed file are recorded in provenance. This package is not claimed to be an end-to-end tested executable release.

@@ -1,0 +1,57 @@
+GSE300977 EXACT PROTEIN BRIDGE CONTRACT V1
+
+PURPOSE:
+Transfer the previously frozen GSE133111/APPRIS19192 human TMD
+annotation onto the GSE300977 Ensembl release 104 genomic reference.
+
+SOURCE TMD TABLE:
+GSE133111_stage0C/reference/tmd/primary_tmd_anchors.tsv
+
+SOURCE TMD TABLE EXPECTED SHA256:
+7257a07c51158ea4235c1c45a01ada899fcd78bcaddba68518bbb9a2146a92df
+
+TARGET REFERENCE:
+Ensembl release 104 GRCh38
+
+TARGET GTF EXPECTED SHA256:
+f3de2bccc02877709272a0ce66af59a2922d407a4076541bc5a65c9d3518581e
+
+TARGET GENOME FASTA EXPECTED SHA256:
+78777b0886e8dfa5e14e4957fbbaa53736fcbaa5668d59e09b6b7945fca93d8c
+
+BRIDGE KEY:
+Exact translated protein SHA256 only.
+
+MATCH CLASSES:
+1. SAME_ENST_EXACT
+   Source ENST exists in Ensembl104 and has identical protein SHA256.
+
+2. UNIQUE_EXACT_OTHER_ENST
+   Source ENST is not an exact target match, but exactly one other
+   Ensembl104 transcript has the identical protein SHA256.
+
+3. MULTIPLE_EXACT
+   More than one Ensembl104 transcript has the identical protein SHA256,
+   and no exact source ENST uniquely resolves the mapping.
+
+4. NO_EXACT
+   No Ensembl104 translated CDS has the identical protein SHA256.
+
+FORMAL ADMISSIBLE CLASSES:
+SAME_ENST_EXACT
+UNIQUE_EXACT_OTHER_ENST
+
+FORMAL EXCLUSIONS:
+MULTIPLE_EXACT
+NO_EXACT
+
+PROHIBITED:
+No fuzzy protein matching.
+No partial-sequence matching.
+No longest-isoform rescue.
+No manual isoform selection.
+No result-dependent remapping.
+No new TMD prediction.
+No TMD-signal inspection before bridge freeze.
+
+BIOLOGICAL_SIGNAL_STATUS = NOT_VIEWED

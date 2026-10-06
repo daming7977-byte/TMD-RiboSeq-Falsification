@@ -1,0 +1,12 @@
+Window center (nt)	Source valid pair rows	Unique real geometry units	Unique real pseudo geometry combinations	Exact duplicate pair row excess	Source rows collapsed to real units	Real units with multiple pseudo geometries	Max distinct pseudo geometries per real	Mixed position class units	Ambiguous multi gene units
+-30	6860	6819	6824	36	41	5	2	1	30
+-15	7940	7892	7897	43	48	5	2	1	37
+0	8964	8907	8917	47	57	10	2	2	44
+15	9624	9564	9574	50	60	10	2	2	47
+30	9624	9564	9574	50	60	10	2	2	47
+45	9624	9565	9574	50	59	9	2	1	46
+60	9624	9565	9574	50	59	9	2	1	46
+75	9624	9565	9574	50	59	9	2	1	46
+90	8052	8002	8008	44	50	6	2	1	37
+105	6741	6702	6707	34	39	5	2	1	26
+120	5884	5846	5852	32	38	6	2	1	25

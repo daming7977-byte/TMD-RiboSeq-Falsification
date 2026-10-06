@@ -1,0 +1,149 @@
+GSE300977 PRIMARY TMD-SPATIAL ESTIMAND CONTRACT V1
+
+STATUS:
+Frozen before TMD-centered biological signal inspection.
+
+PRIMARY CENTER:
++75
+
+PRIMARY WINDOW:
+[TMD+60,TMD+91), 31 nt before Crossmap masking.
+
+PRIMARY UNIVERSE:
+9098 Crossmap-eligible geometry-resolved real-pseudo units.
+
+LIBRARIES:
+ER:
+rep1 B01 pulldown vs B02 input
+rep2 B11 pulldown vs B12 input
+
+mitochondria:
+rep1 B09 pulldown vs B10 input
+rep2 B07 pulldown vs B08 input
+
+cytosol:
+rep1 B05 pulldown vs B06 input
+rep2 B03 pulldown vs B04 input
+
+READ COUNTING:
+NH1 unique BAMs only.
+Read lengths 27-36 inclusive.
+plastid CenterMapFactory(nibble=13) semantics.
+
+CenterMapFactory removes 13 positions from each side of each retained
+read and apportions total read mass 1 equally over remaining positions.
+
+CROSSMAP:
+Only unmasked window positions are counted.
+
+GEOMETRY DENSITY:
+count density =
+sum of center-mapped fractional count over unmasked positions
+/
+number of unmasked positions.
+
+MULTIPLE PSEUDOS:
+Distinct pseudo densities for a real unit are averaged with equal weight
+within each library.
+
+AGGREGATION:
+Each unique real geometry unit contributes exactly once.
+
+For each library:
+R = arithmetic mean real density over the 9098 real units.
+P = arithmetic mean matched pseudo-control density over the same 9098 units.
+
+For each location and replicate:
+
+E_real =
+log2(R_pulldown / R_input)
+
+E_pseudo =
+log2(P_pulldown / P_input)
+
+PRIMARY TMD-SPECIFIC EFFECT:
+
+D =
+E_real - E_pseudo
+
+equivalently:
+
+D =
+log2[
+(R_pulldown / R_input)
+/
+(P_pulldown / P_input)
+]
+
+INTERPRETATION:
+D > 0 indicates TMD-specific spatial enrichment relative to frozen
+same-transcript pseudo controls.
+
+D < 0 indicates relative depletion.
+
+ZERO POLICY:
+No pseudocount is used in the primary aggregate estimand.
+
+If any aggregate R or P required for a primary contrast equals zero,
+analysis stops and the zero condition is reported.
+No post-hoc pseudocount rescue is permitted.
+
+REPLICATES:
+D is calculated separately for replicate 1 and replicate 2.
+
+LOCATION SUMMARY:
+D_location =
+arithmetic mean of the two replicate-specific D values.
+
+REPLICATE CONCORDANCE:
+Recorded as SAME_SIGN or OPPOSITE_SIGN.
+No replicate is removed for discordance.
+
+CROSS-LOCATION CONTRASTS:
+Calculated within replicate first:
+
+ER_minus_mito
+ER_minus_cytosol
+mito_minus_cytosol
+
+Then averaged across the two replicate-specific contrasts.
+
+PRIMARY UNCERTAINTY:
+Unit bootstrap, 10000 resamples.
+
+Bootstrap unit:
+one complete real geometry unit together with all of its frozen pseudo
+geometries.
+
+The same bootstrap resample is applied simultaneously across all
+libraries, fractions, locations, and replicates.
+
+RANDOM SEED:
+30097775
+
+REPORT:
+percentile 95% bootstrap interval.
+
+IMPORTANT:
+The unit bootstrap measures uncertainty over the frozen TMD-unit
+population. It is not presented as a substitute for biological-replicate
+uncertainty.
+
+PRIMARY SUPPORT LABEL:
+REPLICATE_CONCORDANT if both biological replicates have the same D sign.
+
+UNIT_BOOTSTRAP_SUPPORTED if the 95% unit-bootstrap interval excludes zero.
+
+STRONG_SUPPORT requires both labels.
+
+No library exclusion.
+No result-dependent parameter change.
+
+SECONDARY:
+The pre-frozen 11-center positional scan is mandatory and will use the
+same counting and masking rules center-by-center.
+
+FIRST/INTERNAL stratification is secondary.
+MIXED units are excluded only from those stratified analyses.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

@@ -1,0 +1,23 @@
+DATASET = GSE300977
+
+SOURCE = NH:i:1 unique BAMs
+RUNS = 12
+
+BIOLOGICAL_IDENTITY_REVEAL = LOCKED
+
+READ_LENGTH_QC =
+Count every unique alignment by SEQ length without filtering.
+
+DESCRIPTIVE_AUTHOR_RANGE =
+27-36 nt
+
+IMPORTANT =
+The 27-36 nt range is reported descriptively because it corresponds
+to the published downstream Ribo-seq counting range.
+No read length is accepted or rejected at this stage.
+
+PERIODICITY_VIEWED = FALSE
+P_SITE_OFFSETS_SELECTED = FALSE
+TMD_RESULT_VIEWED = FALSE
+
+RESULT_INFORMED_PARAMETER_RETUNING = PROHIBITED

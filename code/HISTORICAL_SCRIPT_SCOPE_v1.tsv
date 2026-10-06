@@ -1,0 +1,4 @@
+file	classification	execution_scope	reason
+scripts/TMD-RiboSeq/scripts/stage0c/audit_only_coordinate_null_capacity_policy.py	DOCUMENT_ONLY	HISTORICAL_PREPARATION_ONLY	Encodes v1 capacity policy; not the authoritative v2 generator.
+scripts/TMD-RiboSeq/scripts/stage0c/audit_only_coordinate_null_feasibility.py	DOCUMENT_ONLY	HISTORICAL_FEASIBILITY_ONLY	Do not run as a substitute for frozen coordinate-null v2.
+scripts/TMD-RiboSeq/scripts/stage0c/audit_only_pseudo_anchor_feasibility.py	PASS	IMPORTED_HELPER_RETAINED	Construction and validation import this module.

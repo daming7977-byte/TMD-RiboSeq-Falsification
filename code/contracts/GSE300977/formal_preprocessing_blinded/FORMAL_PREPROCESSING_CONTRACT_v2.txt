@@ -1,0 +1,57 @@
+DATASET = GSE300977
+
+SUPERSEDES = FORMAL_PREPROCESSING_CONTRACT_v1
+
+RAW_AUDIT_SEAL_SHA256 =
+039e20547662b6887dc0d6815c1b60ff2ff8e75464c0794e6749a7dae1a4d89d
+
+RAW_ARCHITECTURE_PILOT_SEAL_SHA256 =
+272698b5fd1335b5bd4ccf78c3530acd8bf6de59a38768f1211ed18f0e3bc1dd
+
+LINKER_DIAGNOSTIC_SEAL_SHA256 =
+95441b2e68ce682b1c97208c9ff9c556762eef51e010f19de841eda19487b783
+
+TAIL_DIAGNOSTIC_SEAL_SHA256 =
+a03a4a8b29625da276f4997ef602e4f6bb7a2c8f95956e2c9a7e3fdda86a24ea
+
+TAIL9_PILOT_SEAL_SHA256 =
+3394fde3b692947a1d84e7828ce1b2fbc6aeadf3f2588b48ed07e694110cdeb5
+
+BIOLOGICAL_IDENTITY_REVEAL = LOCKED
+
+RAW_SRA_RETAINED_3P_TAIL_LENGTH_NT = 9
+
+OPERATIONAL_TAIL_MODEL =
+5-nt high-entropy UMI-like sequence followed by
+4-nt highly sample-specific barcode-like sequence
+
+CLAIM_ABOUT_ORIGINAL_SYNTHESIZED_LINKER_LENGTH =
+NOT_MADE
+
+UMI_LIKE_RAW_COORDINATES = [-9,-5)
+BARCODE_LIKE_RAW_COORDINATES = [-4,end)
+
+FORMAL_OPERATION =
+extract 5-nt UMI-like sequence into read identifier
+record 4-nt barcode-like sequence in read identifier
+remove final 9 nt from sequence and quality
+
+MIN_INSERT_LENGTH_NT = 18
+MAX_INSERT_LENGTH_NT = NONE
+
+BARCODE_FILTERING = NONE
+RATIONALE_BARCODE_FILTERING =
+SRA runs are already sample-specific/demultiplexed;
+terminal barcode is retained only for provenance/QC
+
+DEDUPLICATION = NONE_AT_PREPROCESSING_STAGE
+RATIONALE_DEDUPLICATION =
+published processing states UMI extraction but does not
+provide a sufficiently explicit public deduplication rule
+for faithful preregistration
+
+ADDITIONAL_ADAPTER_MATCHING = NONE
+
+MAPPING_PERFORMED = FALSE
+PERIODICITY_VIEWED = FALSE
+SPATIAL_STATE_RESULT_VIEWED = FALSE

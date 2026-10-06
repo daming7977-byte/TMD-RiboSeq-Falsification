@@ -1,0 +1,69 @@
+GSE300977 REAL-PSEUDO PAIRED GEOMETRY ADJUDICATION CONTRACT V1
+
+STATUS:
+Frozen before biological TMD signal inspection.
+
+SOURCE:
+GSE300977_TRANSFERRED_PSEUDO_PAIRS_v2.tsv
+
+PRIMARY REAL ANALYTIC UNIT:
+Unique real genomic window geometry.
+
+For the +75 primary window, uniqueness is defined by:
+chrom
+strand
+real_anchor_genomic_start0
+exact real +75 genomic/spliced window geometry
+
+SECONDARY POSITIONAL UNIT:
+The same definition is applied separately at each frozen center.
+
+EXACT DUPLICATE PAIRS:
+Transcript-level rows sharing both:
+- identical real window geometry
+- identical pseudo window geometry
+
+are collapsed and contribute exactly once.
+
+MULTIPLE PSEUDO CONTROLS FOR ONE REAL GEOMETRY:
+If one unique real geometry is associated with more than one distinct
+frozen pseudo geometry:
+
+- the real geometry contributes exactly once;
+- no pseudo geometry is selected or discarded;
+- all distinct frozen pseudo geometries are retained as its control set.
+
+DOWNSTREAM CONTROL EFFECT:
+For a real unit with K distinct pseudo geometries, the pseudo-control
+local effect is the unweighted arithmetic mean of the K distinct
+pseudo local effects.
+
+The real local effect is therefore never replicated merely because
+multiple transcript-level pseudo assignments collapse onto the same
+real genomic geometry.
+
+No count-weighted pseudo selection.
+No best-pseudo selection.
+No post-signal representative selection.
+
+CENTER VALIDITY:
+A real-pseudo pair is eligible at a center only when its frozen,
+reproduced real/pseudo validity mask marks that center valid.
+
+Because the frozen matched-pair policy requires identical real/pseudo
+validity masks, a center is either jointly valid or jointly invalid.
+
+FIRST / INTERNAL:
+If all source rows contributing to a real geometry agree, retain the
+class.
+If they disagree, classify as MIXED.
+MIXED remains in ALL-TMD analyses but not FIRST-only or INTERNAL-only
+stratification.
+
+GENE:
+If all contributing rows agree on one gene, retain it.
+Otherwise mark AMBIGUOUS_MULTI_GENE.
+
+NO BIOLOGICAL COUNTS OR SIGNAL MAY BE USED TO ALTER THESE RULES.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

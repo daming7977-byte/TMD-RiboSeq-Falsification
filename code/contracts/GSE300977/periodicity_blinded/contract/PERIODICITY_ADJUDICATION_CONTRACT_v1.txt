@@ -1,0 +1,41 @@
+DATASET = GSE300977
+
+SOURCE = NH:i:1 unique BAMs
+RUNS = 12
+
+BIOLOGICAL_IDENTITY_REVEAL = LOCKED
+TMD_RESULT_VIEWED = FALSE
+
+CANDIDATE_READ_LENGTH_RANGE = 27-36 nt
+RANGE_SOURCE = published author downstream Ribo-seq counting range
+
+P_SITE_ESTIMATION =
+plastid psite
+length-specific
+start-codon metagene
+blind-library-specific
+
+P_SITE_MANUAL_RESCUE = PROHIBITED
+P_SITE_MANUAL_OFFSET_EDITING = PROHIBITED
+
+PHASING =
+plastid phase_by_size
+CDS-based
+length-specific
+
+MIN_READS_FOR_LENGTH = 1000
+PHASE0_PASS_THRESHOLD = 0.70
+DOMINANT_PHASE_REQUIRED = 0
+
+FINAL_LENGTH_PASS =
+within 27-36 nt
+AND sufficient support
+AND valid automatically estimated P-site offset
+AND dominant phase = 0
+AND phase0 fraction >= 0.70
+
+PARAMETER_RETUNING_AFTER_RESULT = PROHIBITED
+BIOLOGY_INFORMED_LENGTH_SELECTION = PROHIBITED
+
+PERIODICITY_VIEWED = FALSE
+P_SITE_OFFSETS_VIEWED = FALSE

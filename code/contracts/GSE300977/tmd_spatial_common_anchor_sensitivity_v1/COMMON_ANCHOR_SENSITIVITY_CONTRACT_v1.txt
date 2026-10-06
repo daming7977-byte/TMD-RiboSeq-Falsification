@@ -1,0 +1,53 @@
+GSE300977 COMMON-ANCHOR POSITIONAL SENSITIVITY V1
+
+STATUS:
+Post-reveal sensitivity analysis.
+
+PURPOSE:
+Assess whether the observed 11-center positional profile can be explained
+by changes in the eligible TMD-unit composition across centers.
+
+THIS ANALYSIS DOES NOT:
+replace the frozen primary +75 analysis;
+replace the preregistered 11-center secondary scan;
+redefine any primary or secondary center.
+
+COMMON-ANCHOR UNIVERSE:
+A genomic real TMD anchor is retained only if:
+
+1. it is jointly real/pseudo Crossmap-eligible at every one of the
+   11 frozen centers;
+
+2. exactly one eligible real geometry exists for that genomic anchor
+   at every center.
+
+KEY:
+chrom
+strand
+real_anchor_genomic_start0
+
+The same fixed genomic-anchor population is used at every center.
+
+COUNTING:
+Reuse the already completed frozen secondary geometry-density checkpoints.
+
+No BAM recounting.
+No change to CenterMapFactory.
+No change to read lengths.
+No change to Crossmap masking.
+No change to pseudo assignments.
+
+ESTIMAND:
+Identical real-vs-pseudo difference-in-differences D.
+
+BOOTSTRAP:
+10000 common-anchor unit resamples.
+Seed = 30097775.
+
+The same bootstrap multiplicity vector is applied simultaneously to all
+11 centers, all libraries, all locations and both biological replicates.
+
+INTERPRETATION:
+This is a robustness/sensitivity analysis only.
+
+No center is promoted to primary.

@@ -1,0 +1,23 @@
+GSE300977 GEOMETRY-RESOLVED ANALYTIC UNIT CONTRACT V2
+
+The analytic-unit definition is unchanged from v1.
+
+AUTHORITATIVE UPSTREAM WINDOW GEOMETRY:
+HUMAN_TMD_WINDOW_GEOMETRY_CONTRACT_v2
+
+Human window admissibility uses the frozen GSE133111 CDS span:
+translated CDS plus the exact annotated 3-nt stop codon when the frozen
+source CDS_length_nt exceeds translated CDS length by 3 nt.
+
+PRIMARY UNIT:
+unique genomic anchor + exact valid +75 31-nt window geometry.
+
+SECONDARY UNIT:
+unique genomic anchor + center + exact valid 31-nt window geometry.
+
+No representative transcript is selected.
+No clipping.
+No zero filling.
+No result-dependent collapse or exclusion.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

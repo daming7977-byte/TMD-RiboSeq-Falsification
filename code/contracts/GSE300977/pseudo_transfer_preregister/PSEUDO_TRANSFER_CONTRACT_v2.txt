@@ -1,0 +1,53 @@
+GSE300977 PSEUDO TRANSFER CONTRACT V2
+
+SOURCE:
+Frozen GSE133111 primary_tmd_pseudo_anchor_pairs.tsv
+
+SOURCE SHA256:
+1f6150d9985c82460d9f12ccc565edb416a1539ef70c761149f35b8fefba60a5
+
+SOURCE ELIGIBILITY:
+match_status = MATCHED
+
+TARGET ELIGIBILITY:
+Corresponding real TMD must already belong to the frozen GSE300977
+formal TMD universe.
+
+PSEUDO MATCHING:
+No new pseudo matching is allowed.
+Frozen source pseudo_anchor_cds0 and pseudo segment coordinates are
+transferred unchanged.
+
+HUMAN WINDOW SPAN:
+Use frozen source CDS_length_nt.
+
+If:
+source CDS_length_nt - target translated CDS length = 0
+use translated CDS only.
+
+If difference = 3
+append the exact Ensembl104 annotated 3-nt stop_codon for window geometry.
+
+PRIMARY WINDOW:
+[anchor+60, anchor+91)
+
+CENTERS:
+-30,-15,0,+15,+30,+45,+60,+75,+90,+105,+120
+
+HARD GATES:
+- source/target TMD position class identical
+- real genomic anchor reproduced exactly
+- pseudo segment bounds valid
+- pseudo segment length unchanged
+- pseudo segment codon aligned
+- pseudo segment overlaps no accepted target TMD
+- target real validity mask reproduces frozen source real mask
+- target pseudo validity mask reproduces frozen source pseudo mask
+- target real and pseudo validity masks remain identical
+
+NO FUZZY MATCHING.
+NO REMATCHING.
+NO POSITION OPTIMIZATION.
+NO RESULT-DEPENDENT EXCLUSION.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

@@ -1,0 +1,34 @@
+source	line	literal_excerpt_not_a_new_command
+GSE300977/mapping_full_blinded/container_full_one_v2.sh	14	"TLOG=""$ROOT/mapping_full_blinded/logs/${BID}.tophat.log"""
+GSE300977/mapping_full_blinded/container_full_one_v2.sh	16	"OUT=""$ROOT/mapping_full_blinded/tophat/${BID}"""
+GSE300977/mapping_full_blinded/container_full_one_v2.sh	28	"""$ROOT/mapping_full_blinded/tophat"" \"
+GSE300977/mapping_full_blinded/container_full_one_v2.sh	38	| bowtie \
+GSE300977/mapping_full_blinded/container_full_one_v2.sh	103	tophat \
+GSE300977/periodicity_blinded/run_crossmap_k29_mm1.sh	6	"BT112=""REPRO_ENV/envs/gse300977-tophat211-x86/bin/bowtie"""
+GSE300977/periodicity_blinded/run_crossmap_k29_mm1.sh	10	"TWOBIT=""periodicity_blinded/crossmap/GRCh38_release104_primary.2bit"""
+GSE300977/periodicity_blinded/run_crossmap_k29_mm1.sh	12	"OUT=""periodicity_blinded/crossmap/GRCh38_release104"""
+GSE300977/periodicity_blinded/run_crossmap_k29_mm1.sh	19	crossmap \
+GSE300977/periodicity_blinded/run_crossmap_k29_mm1.sh	26	"  --bowtie ""$BT112"" \"
+GSE300977/periodicity_blinded/run_crossmap_k29_mm1.sh	33	> periodicity_blinded/crossmap/CROSSMAP_EXIT_STATUS.txt
+GSE300977/periodicity_blinded/run_crossmap_k29_mm1.sh	35	date >> periodicity_blinded/crossmap/CROSSMAP_EXIT_STATUS.txt
+GSE300977/formal_counting_blinded/run_formal_blinded_counting_v1.sh	9	"METAGENE=""REPRO_ENV/envs/gse300977-plastid061-x86/bin/metagene"""
+GSE300977/formal_counting_blinded/run_formal_blinded_counting_v1.sh	10	"PYTHON=""REPRO_ENV/envs/gse300977-plastid061-x86/bin/python"""
+GSE300977/formal_counting_blinded/run_formal_blinded_counting_v1.sh	165	normalize_over and min_counts affect auxiliary normalized/metagene
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	9	"PYTHON=""REPRO_ENV/envs/gse300977-plastid061-x86/bin/python"""
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	107	"    echo ""FAILURE_LOCATION = plastid.bin.metagene.do_count overview heatmap p95 calculation"""
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	135	"cp ""$ORIG"" ""$PATCHDIR/metagene.original.py"""
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	137	"shasum -a 256 ""$PATCHDIR/metagene.original.py"" \"
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	138	"> ""$PATCHDIR/metagene.original.py.sha256"""
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	144	"""$PYTHON"" - ""$PATCHDIR/metagene.original.py"" \"
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	145	"              ""$PATCHDIR/metagene.p95fix.py"" <<'PY'"
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	179	"shasum -a 256 ""$PATCHDIR/metagene.p95fix.py"" \"
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	180	"> ""$PATCHDIR/metagene.p95fix.py.sha256"""
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	189	"""$PATCHDIR/metagene.original.py"" \"
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	190	"""$PATCHDIR/metagene.p95fix.py"" \"
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	191	"> ""$PATCHDIR/metagene.p95fix.diff"" || true"
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	194	"cat ""$PATCHDIR/metagene.p95fix.diff"""
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	205	"patched = Path(__file__).with_name(""metagene.p95fix.py"")"
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	252	"    cat ""$PATCHDIR/metagene.original.py.sha256"""
+GSE300977/formal_counting_blinded/prepare_p95fix_and_resume_v1p1.sh	255	"    cat ""$PATCHDIR/metagene.p95fix.py.sha256"""
+GSE300977/formal_counting_blinded/compat_patch/metagene.p95fix.py	788	        Command-line arguments to |metagene| or |psite| count subprograms
+GSE300977/periodicity_blinded/contract/CROSSMAP_IMPLEMENTATION_CONTRACT_v2.txt	10	No crossmap command or explicit k value found in LOCL-TL-analysis repository.

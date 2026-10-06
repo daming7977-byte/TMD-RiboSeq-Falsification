@@ -1,0 +1,13 @@
+name: p3-nargab-2026
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.14
+  - numpy=2.3.5
+  - pandas=2.2.3
+  - libblas=*=*accelerate
+  - liblapack=*=*accelerate
+  - pip
+  - pip:
+      - matplotlib==3.11.2
+      - Pillow==12.3.0

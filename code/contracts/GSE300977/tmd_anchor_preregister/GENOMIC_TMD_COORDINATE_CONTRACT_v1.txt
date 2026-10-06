@@ -1,0 +1,53 @@
+GSE300977 GENOMIC TMD COORDINATE CONTRACT V1
+
+INPUT:
+FORMAL_TMD_ANCHOR_CANDIDATES_v1p1.tsv
+
+REFERENCE:
+Ensembl release 104 GRCh38 GTF.
+
+CDS ORDER:
+Plus strand:
+ascending genomic CDS segments.
+
+Minus strand:
+descending genomic CDS segments.
+
+TRANSCRIPT CDS OFFSET:
+0-based in transcript 5-prime-to-3-prime coding orientation.
+
+PRIMARY ANCHOR:
+target_tmd_cds_nt_start0
+
+ANCHOR DEFINITION:
+First nucleotide, in transcript orientation, of the N-terminal codon
+of the frozen TMD.
+
+GENOMIC ANCHOR:
+Single genomic nucleotide corresponding exactly to that transcript-CDS
+offset.
+
+BED REPRESENTATION:
+anchor_start0 = genomic 0-based coordinate of that nucleotide
+anchor_end0   = anchor_start0 + 1
+
+TMD GENOMIC INTERVAL:
+The full TMD nucleotide interval is transferred across CDS exon blocks.
+If a TMD crosses an exon junction, it remains multi-block; intronic
+sequence is never treated as part of the TMD.
+
+MANDATORY VALIDATION:
+- one chromosome per target transcript
+- one strand per target transcript
+- summed CDS length equals frozen target CDS length
+- anchor falls inside CDS
+- full TMD interval maps completely
+- mapped TMD nucleotide count equals
+  target_tmd_cds_nt_end0_exclusive - target_tmd_cds_nt_start0
+- FIRST/INTERNAL and TMD_index remain unchanged
+- all 19113 formal candidate rows must either map or trigger STOP
+
+NO FUZZY OR MANUAL RESCUE.
+NO TMD SIGNAL INSPECTION BEFORE FINAL GENOMIC ANCHOR FREEZE.
+
+BIOLOGICAL_TMD_SIGNAL_STATUS = NOT_VIEWED

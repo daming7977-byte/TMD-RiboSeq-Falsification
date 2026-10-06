@@ -1,0 +1,2 @@
+genes	iterations	seed	rng	valid_iterations	invalid_iterations	invalid_fraction	ci_low	ci_high	technical_status	invalid_rule
+131	10000	255657300	PCG64	10000	0	0.0	-0.30014720437685116	0.1554518398504866	PASS	No adaptive invalid-iteration tolerance

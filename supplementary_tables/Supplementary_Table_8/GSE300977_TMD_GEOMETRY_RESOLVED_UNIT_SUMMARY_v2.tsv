@@ -1,0 +1,12 @@
+Window center (nt)	Source valid rows	Source invalid rows	Invalid outside frozen human span	Invalid overlap other tmd	Unique valid genomic anchors	Geometry resolved units	Collapsed excess source rows	Anchors with multiple valid geometries	Max valid geometries per anchor	Mixed position class units	Ambiguous multi gene units
+-30	12017	7096	648	6448	11945	11947	70	2	2	2	58
+-15	15207	3906	406	3500	15119	15120	87	1	2	3	74
+0	17867	1246	98	1148	17763	17763	104	0	1	5	88
+15	19113	0	0	0	19001	19001	112	0	1	5	96
+30	18775	338	6	332	18667	18668	107	1	2	5	91
+45	18503	610	41	569	18398	18399	104	1	2	4	88
+60	17403	1710	180	1530	17308	17310	93	2	2	4	77
+75	15010	4103	345	3758	14926	14927	83	1	2	1	68
+90	12327	6786	565	6221	12254	12259	68	5	2	1	54
+105	9787	9326	881	8445	9728	9733	54	5	2	1	41
+120	7836	11277	1206	10071	7784	7789	47	5	2	1	34

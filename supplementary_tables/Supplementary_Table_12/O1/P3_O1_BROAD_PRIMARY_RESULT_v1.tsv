@@ -1,0 +1,2 @@
+estimand	replicate_1	replicate_2	mean	gene_cluster_percentile_CI95_lower	gene_cluster_percentile_CI95_upper	valid_iterations	invalid_iterations	analysis_stage	technical_status
+BROAD_11CENTER_LATE_MINUS_EARLY_MITO_MINUS_ER	-0.90304360883931745	-0.14712492793885701	-0.52508426838908717	-0.9857085526697732	-0.039207055107072911	10000	0	POST_REVEAL_ORDINAL_SENSITIVITY	PASS

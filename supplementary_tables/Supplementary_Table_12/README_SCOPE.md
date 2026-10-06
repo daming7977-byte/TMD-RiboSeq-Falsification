@@ -1,0 +1,1 @@
+Frozen historical records are reproduced unchanged. Current interpretation is Supplementary Methods S15. In particular, historical TOM22 biological-replicate wording is superseded by deposited replicate-labeled pairs with unresolved third-pair provenance. Neither these records nor O1 constitute positive independent replication or ordinal-specific support.

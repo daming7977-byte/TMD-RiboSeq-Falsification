@@ -1,0 +1,100 @@
+GSE300977 FIRST VS INTERNAL TMD STRATIFICATION CONTRACT V1
+
+STATUS:
+Implementation frozen after completion of the preregistered positional
+scan and before inspection of FIRST-vs-INTERNAL stratified signal.
+
+ANALYSIS STATUS:
+Preregistered secondary stratification.
+
+SOURCE:
+Frozen Crossmap-eligible paired real-pseudo positional units.
+
+CENTERS:
+-30,-15,0,+15,+30,+45,+60,+75,+90,+105,+120
+
+TMD CLASS:
+Use frozen position_class_consensus.
+
+FIRST:
+position_class_consensus = FIRST
+
+INTERNAL:
+position_class_consensus = INTERNAL
+
+MIXED:
+Excluded from FIRST-only and INTERNAL-only analyses exactly as specified
+before biological reveal.
+
+No TMD is reclassified.
+
+UNIT:
+One unique geometry-resolved real TMD unit together with all of its
+frozen distinct pseudo geometries.
+
+COUNTING:
+Reuse completed SECONDARY_GEOMETRY_DENSITIES_v1 checkpoints.
+
+No BAM recounting.
+No change to:
+- read lengths 27-36
+- CenterMapFactory(nibble=13)
+- Crossmap masking
+- pseudo assignment
+- window geometry
+- center definitions
+
+ESTIMAND:
+For each class, center, location and replicate:
+
+E_real =
+log2(R_pulldown / R_input)
+
+E_pseudo =
+log2(P_pulldown / P_input)
+
+D =
+E_real - E_pseudo
+
+MULTIPLE PSEUDOS:
+Equal-weight mean of distinct frozen pseudo geometry densities.
+
+LOCATION SUMMARY:
+Arithmetic mean of replicate-specific D values.
+
+BOOTSTRAP:
+10000 nonparametric unit-bootstrap resamples separately within each class
+and center.
+
+Seed base:
+30097775
+
+FIRST and INTERNAL are bootstrapped independently because their unit
+populations are disjoint.
+
+FIRST-VS-INTERNAL CONTRAST:
+For each center and location:
+
+Delta_FI =
+D_FIRST_location_mean - D_INTERNAL_location_mean
+
+Positive Delta_FI:
+larger TMD-specific effect among FIRST TMDs.
+
+Negative Delta_FI:
+larger TMD-specific effect among INTERNAL TMDs.
+
+Bootstrap CI for Delta_FI is obtained from the difference between
+independently resampled FIRST and INTERNAL bootstrap estimands at the
+same bootstrap iteration.
+
+REPORTING:
+95% percentile bootstrap intervals are pointwise only.
+
+No multiplicity-corrected significance across centers is claimed.
+
+No center is promoted to primary.
+
+No result-dependent filtering.
+No library exclusion.
+No parameter rescue.

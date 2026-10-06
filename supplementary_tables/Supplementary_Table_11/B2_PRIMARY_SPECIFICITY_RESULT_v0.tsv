@@ -1,0 +1,2 @@
+length_nt	A_site_offset_nt	genes	real_anchors	pseudo_definitions	N_input	N_pulldown	statistic	bootstrap_CI95_lower	bootstrap_CI95_upper	frozen_one_sided95_lower	frozen_directional_verdict	bootstrap_draws	bootstrap_seed	new_support_exclusions	biological_replication
+28	15	338	1068	5340	2398552	2067202	-0.01588078085497888	-0.06051919628188886	0.030080938754041473	-0.05335707116911562	NO_DIRECTIONAL_SUPPORT	10000	6101208	0	NO / NOT ESTABLISHED

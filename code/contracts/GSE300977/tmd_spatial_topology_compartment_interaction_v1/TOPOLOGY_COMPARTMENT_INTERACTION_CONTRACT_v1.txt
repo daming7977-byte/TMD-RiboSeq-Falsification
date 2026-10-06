@@ -1,0 +1,92 @@
+GSE300977 MULTI-PASS TOPOLOGY × COMPARTMENT INTERACTION CONTRACT V1
+
+STATUS:
+Post-reveal mechanistic sensitivity analysis.
+
+PURPOSE:
+Directly test whether the FIRST-vs-INTERNAL TMD-specific effect differs
+between subcellular spatial states after restricting to multi-pass proteins.
+
+AUTHORITATIVE TOPOLOGY:
+Frozen pass_class from FORMAL_TMD_ANCHOR_CANDIDATES_v1p1.tsv.
+
+ANALYTIC POPULATIONS:
+MULTI_PASS + FIRST
+MULTI_PASS + INTERNAL
+
+MIXED topology and MIXED position-class units are excluded.
+
+CENTERS:
+-30,-15,0,+15,+30,+45,+60,+75,+90,+105,+120
+
+COUNTING:
+Reuse completed frozen secondary geometry-density checkpoints.
+
+No BAM recounting.
+No change to:
+- 27-36 nt read lengths
+- CenterMapFactory(nibble=13)
+- Crossmap masking
+- pseudo controls
+- TMD windows
+- center definitions
+
+BASE ESTIMAND:
+For each class, location and replicate:
+
+D =
+log2(real pulldown / real input)
+-
+log2(pseudo pulldown / pseudo input)
+
+WITHIN-COMPARTMENT TOPOLOGY EFFECT:
+
+FI_location =
+D_FIRST_location - D_INTERNAL_location
+
+DIRECT COMPARTMENT × TOPOLOGY INTERACTIONS:
+
+MITO_MINUS_ER =
+FI_mitochondria - FI_ER
+
+CYTOSOL_MINUS_ER =
+FI_cytosol - FI_ER
+
+MITO_MINUS_CYTOSOL =
+FI_mitochondria - FI_cytosol
+
+Each interaction is calculated within biological replicate first.
+Replicate-specific interactions are then averaged.
+
+BOOTSTRAP:
+10000 nonparametric unit-bootstrap resamples per center.
+
+FIRST and INTERNAL multi-pass populations are disjoint and resampled
+independently.
+
+Within FIRST, the same bootstrap multiplicity vector is applied
+simultaneously across all 12 libraries and all compartments.
+
+Within INTERNAL, the same bootstrap multiplicity vector is likewise
+applied simultaneously across all libraries and compartments.
+
+This preserves cross-compartment covariance within each topology class.
+
+Seed base = 30097775.
+
+REPORT:
+Pointwise percentile 95% bootstrap intervals.
+
+No multiplicity-corrected significance across centers is claimed.
+
+INTERPRETATION:
+Positive MITO_MINUS_ER means the FIRST-vs-INTERNAL topology effect is
+more positive in mitochondria than in ER.
+
+This analysis does not replace the primary +75 result or the preregistered
+secondary positional scan.
+
+NO CENTER PROMOTION.
+NO PARAMETER RESCUE.
+NO RESULT-DEPENDENT FILTERING.
+NO LIBRARY EXCLUSION.

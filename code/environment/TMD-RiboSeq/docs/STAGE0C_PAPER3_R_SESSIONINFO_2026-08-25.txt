@@ -1,0 +1,37 @@
+Captured: 2026-08-25 Asia/Tokyo
+Command: Rscript -e 'suppressPackageStartupMessages(library(edgeR)); sessionInfo()'
+
+Warning messages:
+1: package 'edgeR' was built under R version 4.6.1
+2: package 'limma' was built under R version 4.6.1
+
+R version 4.6.0 (2026-04-24)
+Platform: aarch64-apple-darwin23
+Running under: macOS Tahoe 26.5.2
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRblas.0.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRlapack.dylib; LAPACK version 3.12.1
+
+locale:
+[1] C.UTF-8/C.UTF-8/C.UTF-8/C/C.UTF-8/C.UTF-8
+
+time zone: Asia/Tokyo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+
+other attached packages:
+[1] edgeR_4.10.3 limma_3.68.5
+
+loaded via a namespace (and not attached):
+[1] compiler_4.6.0  grid_4.6.0      locfit_1.5-9.12 lattice_0.22-9
+[5] statmod_1.5.2
+
+Executable and library paths:
+R_HOME=/Library/Frameworks/R.framework/Resources
+R_EXECUTABLE=/usr/local/bin/R
+RSCRIPT_EXECUTABLE=/usr/local/bin/Rscript
+LIB_PATHS=REPRO_WORKSPACE/USER_HOME/Library/R/arm64/4.6/library;/Library/Frameworks/R.framework/Versions/4.6/Resources/library
+EDGER_PATH=REPRO_WORKSPACE/USER_HOME/Library/R/arm64/4.6/library/edgeR

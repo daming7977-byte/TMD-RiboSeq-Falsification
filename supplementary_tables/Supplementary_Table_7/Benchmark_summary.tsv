@@ -1,0 +1,3 @@
+Dataset	Role	Formal tmd specific outcome	Coordinate null	Interpretation
+GSE106329	Negative / falsification	Negative / falsification	Not distinguished from coordinate null	Broad non-deduplicated signal fails UMI robustness, matched-pseudo specificity and coordinate-null specificity.
+GSE133111	Literature-positive biological context	Stage 1 FAIL	PASS	Coordinate-null PASS does not constitute biological validation; neither dataset is a formal positive TMD-specific validation benchmark.

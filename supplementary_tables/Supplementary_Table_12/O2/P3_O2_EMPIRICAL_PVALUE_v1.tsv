@@ -1,0 +1,2 @@
+observed	B_valid	count_le_observed	count_ge_observed	p_lower	p_upper	p_two_sided	technical_status	verdict
+-0.5250842683890872	10000	4423	5577	0.4423557644235576	0.5577442255774423	0.8847115288471152	PASS	FROZEN_NULL_NOT_REJECTED

@@ -1,0 +1,35 @@
+{
+  "27": {
+    "statistic": 0.13291663464730646,
+    "lower": -0.24494584956571977,
+    "upper": 0.5309373886223513,
+    "verdict": "NO_DIRECTIONAL_CHANGE_SUPPORT",
+    "sign": "PRIMARY",
+    "assessment": "PRIMARY"
+  },
+  "28": {
+    "statistic": 0.03999280030231667,
+    "lower": -0.10472893368959985,
+    "upper": 0.18860158067168287,
+    "verdict": "NO_DIRECTIONAL_CHANGE_SUPPORT",
+    "sign": "CONCORDANT",
+    "assessment": "INCONCLUSIVE_CONCORDANT_NULL"
+  },
+  "secondary": {
+    "27": {
+      "statistic": -0.0029611715604990095,
+      "lower": -0.053912684793896305,
+      "upper": 0.0496922143962792,
+      "sign_vs_endpoint": "DISCORDANT",
+      "CI_agreement": true
+    },
+    "28": {
+      "statistic": 0.008519900464077152,
+      "lower": -0.01826747254341544,
+      "upper": 0.034740700902983965,
+      "sign_vs_endpoint": "CONCORDANT",
+      "CI_agreement": true
+    }
+  },
+  "inputs_verified": 69
+}

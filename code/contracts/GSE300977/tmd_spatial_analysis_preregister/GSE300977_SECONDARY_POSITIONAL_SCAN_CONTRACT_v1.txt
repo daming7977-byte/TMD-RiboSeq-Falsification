@@ -1,0 +1,90 @@
+GSE300977 SECONDARY TMD POSITIONAL SCAN CONTRACT V1
+
+STATUS:
+Implementation frozen after completion of the preregistered primary +75
+analysis and before inspection of any non-primary center-specific signal.
+
+PRIMARY STATUS:
++75 remains the sole primary center.
+No secondary center may replace or redefine the primary result.
+
+FROZEN SECONDARY CENTERS:
+-30,-15,0,+15,+30,+45,+60,+75,+90,+105,+120
+
+WINDOW:
+31 nt centered at each frozen center:
+[center-15, center+16)
+
+STRUCTURAL ELIGIBILITY:
+Use the already-frozen human window geometry v2.
+
+CROSSMAP ELIGIBILITY:
+At each center separately:
+- real window must have >=1 unmasked nt
+- every distinct pseudo geometry must have >=1 unmasked nt
+
+PARTIAL MASK:
+Retained exactly as in the primary analysis.
+
+COUNTING:
+NH1 unique BAMs.
+Read lengths 27-36.
+plastid CenterMapFactory(nibble=13).
+Density = unmasked fractional count mass / unmasked nt.
+
+MULTIPLE PSEUDOS:
+Equal-weight mean of distinct pseudo geometry densities.
+
+ESTIMAND:
+For each center, location, and replicate:
+
+E_real =
+log2(R_pulldown / R_input)
+
+E_pseudo =
+log2(P_pulldown / P_input)
+
+D =
+E_real - E_pseudo
+
+REPLICATES:
+Calculated separately.
+
+LOCATION SUMMARY:
+Arithmetic mean of replicate-specific D values.
+
+SECONDARY BOOTSTRAP:
+10000 unit-bootstrap resamples separately within each center.
+
+Each center uses seed 30097775.
+
+The complete real geometry unit together with all frozen pseudo geometries
+is the bootstrap unit.
+
+The same resample is used simultaneously for all 12 libraries within that
+center.
+
+REPORTING:
+95% percentile bootstrap intervals are pointwise intervals.
+
+They are NOT interpreted as multiplicity-corrected significance across
+the 11-center scan.
+
+No secondary center may be promoted to primary based on its result.
+
+Peak location, if reported, is descriptive only.
+
+The +75 implementation must reproduce the already frozen primary +75 D
+values before any non-primary positional result is printed.
+
+PRIMARY +75 REFERENCE VALUES:
+ER rep1 = 0.082889583159
+ER rep2 = 0.095748374758
+mitochondria rep1 = 0.124859849072
+mitochondria rep2 = -0.039749358711
+cytosol rep1 = 0.100608092444
+cytosol rep2 = 0.067930823332
+
+NO PARAMETER RESCUE.
+NO CENTER SELECTION.
+NO LIBRARY EXCLUSION.
