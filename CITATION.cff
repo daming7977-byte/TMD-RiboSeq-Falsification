@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite the verified archived software release when publication is complete."
+message: "Cite the archived v1.0.0 release. This mixed-content package has component-specific rights; see LICENSE_SCOPE.md and the file-level code license manifest. Software licenses do not relicense data, intermediates or artwork."
 title: "Falsification tests of TMD-relative ribosome profiles identify topology-associated compartmental differences"
 type: software
 version: 1.0.0
@@ -7,4 +7,3 @@ authors:
   - family-names: Li
     given-names: Ming
     affiliation: Kyoto University
-license: MIT
