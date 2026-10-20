@@ -1,0 +1,6 @@
+{
+  "relative_to_code_package": "reproduction_output/available_case/REGION_COMPOSITE_SUMMARY_v1.tsv",
+  "sha256": "84a23602aeae7a4b2e76f598d22fb3e1d6c4a7bfb7e7ec094d211a8a3fba2a70",
+  "bytes": 1157,
+  "scope": "Frozen reference for value comparison only; never used to calculate the sensitivity estimates"
+}

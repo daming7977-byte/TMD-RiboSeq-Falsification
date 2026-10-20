@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-16T12:59:47.297031+00:00",
+  "elapsed_seconds": 0.3460464999952819,
+  "verification_only": true,
+  "source_protocol_sha256": "e573192d8ea67a56da558420efa6086dbabf13f8a20212e2bd505730eedf6961",
+  "variants": 30,
+  "draws_per_variant": 10000,
+  "table_comparisons": [
+    {
+      "file": "P3_WITHIN_GENE_INDEPENDENT_RESULTS.tsv",
+      "rows": 30,
+      "columns": 62,
+      "numeric_cells_compared": 1440,
+      "exact_text_cells_compared": 390,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "P3_WITHIN_GENE_ELIGIBILITY_AND_BALANCE.tsv",
+      "rows": 3598,
+      "columns": 21,
+      "numeric_cells_compared": 43993,
+      "exact_text_cells_compared": 28784,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/balance_diagnostics.tsv",
+      "rows": 640,
+      "columns": 14,
+      "numeric_cells_compared": 6400,
+      "exact_text_cells_compared": 2560,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/common_support_strata.tsv",
+      "rows": 1452,
+      "columns": 9,
+      "numeric_cells_compared": 7260,
+      "exact_text_cells_compared": 5808,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/balance_weights.tsv",
+      "rows": 38526,
+      "columns": 14,
+      "numeric_cells_compared": 308208,
+      "exact_text_cells_compared": 231156,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/gene_deletion_influence.tsv",
+      "rows": 24411,
+      "columns": 9,
+      "numeric_cells_compared": 122055,
+      "exact_text_cells_compared": 97644,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/effective_density_contributions.tsv",
+      "rows": 1024,
+      "columns": 9,
+      "numeric_cells_compared": 3072,
+      "exact_text_cells_compared": 6144,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/tmd_count_stratum_effects.tsv",
+      "rows": 16,
+      "columns": 6,
+      "numeric_cells_compared": 24,
+      "exact_text_cells_compared": 64,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/frozen_reproduction_comparison.tsv",
+      "rows": 10,
+      "columns": 7,
+      "numeric_cells_compared": 40,
+      "exact_text_cells_compared": 30,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/within_gene_contrasts_PLATEAU_90_120.tsv",
+      "rows": 17,
+      "columns": 8,
+      "numeric_cells_compared": 119,
+      "exact_text_cells_compared": 17,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/within_gene_contrasts_BROAD_60_120.tsv",
+      "rows": 17,
+      "columns": 8,
+      "numeric_cells_compared": 119,
+      "exact_text_cells_compared": 17,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/positivity_exclusions_PLATEAU_90_120.tsv",
+      "rows": 23010,
+      "columns": 6,
+      "numeric_cells_compared": 23010,
+      "exact_text_cells_compared": 115050,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "file": "evidence/positivity_exclusions_BROAD_60_120.tsv",
+      "rows": 37791,
+      "columns": 6,
+      "numeric_cells_compared": 37791,
+      "exact_text_cells_compared": 188955,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "status": "PASS"
+    }
+  ],
+  "exact_output_comparisons": [
+    {
+      "file": "verified_units.tsv",
+      "expected_sha256": "17566804b8c78dabe6807f7134b4d257e36cd89719164d05500159633c7cd136",
+      "actual_sha256": "17566804b8c78dabe6807f7134b4d257e36cd89719164d05500159633c7cd136",
+      "byte_identical": true
+    },
+    {
+      "file": "gene_annotation.tsv",
+      "expected_sha256": "b369c11e331cefc60ff0d1269ee7d80444d80d6eb47611b220f2bce23cb82489",
+      "actual_sha256": "b369c11e331cefc60ff0d1269ee7d80444d80d6eb47611b220f2bce23cb82489",
+      "byte_identical": true
+    },
+    {
+      "file": "pre_filter_eligibility.tsv",
+      "expected_sha256": "372ffb98982ea29dedcd0558eb29a0ae6ef9be93aadb3a1ca0ca01062eafaad4",
+      "actual_sha256": "372ffb98982ea29dedcd0558eb29a0ae6ef9be93aadb3a1ca0ca01062eafaad4",
+      "byte_identical": true
+    },
+    {
+      "file": "sample_manifest.tsv",
+      "expected_sha256": "1959d8b25658e5e0b3c094ce222bc6e41fa05efb76717e2b0a084d6813f6e024",
+      "actual_sha256": "1959d8b25658e5e0b3c094ce222bc6e41fa05efb76717e2b0a084d6813f6e024",
+      "byte_identical": true
+    },
+    {
+      "file": "verified_unit_densities.npy",
+      "expected_sha256": "64272109db0d236ebdac23d8f9ae7479410a981b39639b2ce7caf0f2d3f101eb",
+      "actual_sha256": "64272109db0d236ebdac23d8f9ae7479410a981b39639b2ce7caf0f2d3f101eb",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_BALANCE_CORE_RESTRICTED_EQUAL_GENE.npy",
+      "expected_sha256": "f89112cd04f6d793e0defabd858c618596874b8dbedb7ee5c9ed80f1487a4c58",
+      "actual_sha256": "f89112cd04f6d793e0defabd858c618596874b8dbedb7ee5c9ed80f1487a4c58",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_BALANCE_CORE_RESTRICTED_UNIT.npy",
+      "expected_sha256": "d226e8e7d2c5facc5fa2217952d6e31295d7ac3389106f4a638525d135a5577b",
+      "actual_sha256": "d226e8e7d2c5facc5fa2217952d6e31295d7ac3389106f4a638525d135a5577b",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_BALANCE_CORE_WEIGHTED.npy",
+      "expected_sha256": "b919f00ad5d620ec8450f151f2fa72980ca51d9bbecc318d3f3104eec0a08e32",
+      "actual_sha256": "b919f00ad5d620ec8450f151f2fa72980ca51d9bbecc318d3f3104eec0a08e32",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_BALANCE_EXTENDED_RESTRICTED_EQUAL_GENE.npy",
+      "expected_sha256": "87db0cb3308e8e574f9ae4fe7b890b418ee9acde489f6e8ae3c3582a4a45bbb7",
+      "actual_sha256": "87db0cb3308e8e574f9ae4fe7b890b418ee9acde489f6e8ae3c3582a4a45bbb7",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_BALANCE_EXTENDED_RESTRICTED_UNIT.npy",
+      "expected_sha256": "9f60df909d73f86536cfcbe6b999185483c58731fac166495807e19d031e68f0",
+      "actual_sha256": "9f60df909d73f86536cfcbe6b999185483c58731fac166495807e19d031e68f0",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_BALANCE_EXTENDED_WEIGHTED.npy",
+      "expected_sha256": "93fbe84e9da216423c01159a6c0f48f6effda0df4a720d796acbc9068d1c6863",
+      "actual_sha256": "93fbe84e9da216423c01159a6c0f48f6effda0df4a720d796acbc9068d1c6863",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_EQUAL_GENE_ALL.npy",
+      "expected_sha256": "beb302b83d1ce738b177e5c8bc52bebe5d7afce1929b667c231c7fe6b072f599",
+      "actual_sha256": "beb302b83d1ce738b177e5c8bc52bebe5d7afce1929b667c231c7fe6b072f599",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_EQUAL_GENE_POSITIVE_SHARED.npy",
+      "expected_sha256": "e68d34f15b44caf3f7f9489dc6d24e1434f9e93ef629f7574e96fece9a5f6c32",
+      "actual_sha256": "e68d34f15b44caf3f7f9489dc6d24e1434f9e93ef629f7574e96fece9a5f6c32",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_EQUAL_GENE_SHARED.npy",
+      "expected_sha256": "d2eeae873ac476b9b76eb4e84457e5b45940b6d33c0fcd0347f0d5a8075fa8ae",
+      "actual_sha256": "d2eeae873ac476b9b76eb4e84457e5b45940b6d33c0fcd0347f0d5a8075fa8ae",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_FROZEN_UNIT_ALL.npy",
+      "expected_sha256": "23d1d5ff50cdca484bc4ca11534fc0a2ef9f4d2505dc0356faf51db080b1b329",
+      "actual_sha256": "23d1d5ff50cdca484bc4ca11534fc0a2ef9f4d2505dc0356faf51db080b1b329",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_UNIT_POSITIVE_SHARED.npy",
+      "expected_sha256": "958819ae49737764640d5eea5c7c3e6affa2ca8699b87dc23deabcb5202e17b7",
+      "actual_sha256": "958819ae49737764640d5eea5c7c3e6affa2ca8699b87dc23deabcb5202e17b7",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_UNIT_SHARED.npy",
+      "expected_sha256": "19e66b9a04fd6c3995e250b43563493ddbc08f3776605d49b7c33ac39a5d96da",
+      "actual_sha256": "19e66b9a04fd6c3995e250b43563493ddbc08f3776605d49b7c33ac39a5d96da",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_WITHIN_GENE_COMMON_TRANSCRIPT.npy",
+      "expected_sha256": "6e19f7498a84cbabfb0b1b7741acce233b7840dff618e934ae32f313e2cbe0dc",
+      "actual_sha256": "6e19f7498a84cbabfb0b1b7741acce233b7840dff618e934ae32f313e2cbe0dc",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_WITHIN_GENE_MEAN.npy",
+      "expected_sha256": "9fa68bace0bae8b4ce3592828b61066bfde51f94871b284fac5b22d09989ab65",
+      "actual_sha256": "9fa68bace0bae8b4ce3592828b61066bfde51f94871b284fac5b22d09989ab65",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_BROAD_60_120_WITHIN_GENE_MEDIAN.npy",
+      "expected_sha256": "de5cfe751f6149e59090c89bc67afd3cb394e167ed53f54b3fff979abec03275",
+      "actual_sha256": "de5cfe751f6149e59090c89bc67afd3cb394e167ed53f54b3fff979abec03275",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_BALANCE_CORE_RESTRICTED_EQUAL_GENE.npy",
+      "expected_sha256": "4774aa08977afce59850a84dcca2cc50b0b790b3ba35781527f48cecd30f77d7",
+      "actual_sha256": "4774aa08977afce59850a84dcca2cc50b0b790b3ba35781527f48cecd30f77d7",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_BALANCE_CORE_RESTRICTED_UNIT.npy",
+      "expected_sha256": "6c8c536c3e6e67915b34d3e5fd563dda5a2a5f97d773a5208b13a7a0e7a1c287",
+      "actual_sha256": "6c8c536c3e6e67915b34d3e5fd563dda5a2a5f97d773a5208b13a7a0e7a1c287",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_BALANCE_CORE_WEIGHTED.npy",
+      "expected_sha256": "5ee5c7a280274325d13a9c9599520e3ea9a5ed9685152699f10d9fb0fb3bf74a",
+      "actual_sha256": "5ee5c7a280274325d13a9c9599520e3ea9a5ed9685152699f10d9fb0fb3bf74a",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_BALANCE_EXTENDED_RESTRICTED_EQUAL_GENE.npy",
+      "expected_sha256": "0d3b3c12c2aeda93d32f7c0ba21d6e870e60fc2bb6109354aa269026dd8cbe9a",
+      "actual_sha256": "0d3b3c12c2aeda93d32f7c0ba21d6e870e60fc2bb6109354aa269026dd8cbe9a",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_BALANCE_EXTENDED_RESTRICTED_UNIT.npy",
+      "expected_sha256": "9b1d485cee07d1306ca02b9e9bb2a5fb47b7423873de34be71c496f2aaed12af",
+      "actual_sha256": "9b1d485cee07d1306ca02b9e9bb2a5fb47b7423873de34be71c496f2aaed12af",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_BALANCE_EXTENDED_WEIGHTED.npy",
+      "expected_sha256": "4d8e2f9e83a615d7b63e6099448824545e14514823d1dcab05cfa845ae433e96",
+      "actual_sha256": "4d8e2f9e83a615d7b63e6099448824545e14514823d1dcab05cfa845ae433e96",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_EQUAL_GENE_ALL.npy",
+      "expected_sha256": "f0953d84eca2194880a75f439af506f7c9d1a979b0a7476058634bbf352d3168",
+      "actual_sha256": "f0953d84eca2194880a75f439af506f7c9d1a979b0a7476058634bbf352d3168",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_EQUAL_GENE_POSITIVE_SHARED.npy",
+      "expected_sha256": "83800f8f1f61ca633fdf746721156ac10639af09c03886bde7027076e30ec4b7",
+      "actual_sha256": "83800f8f1f61ca633fdf746721156ac10639af09c03886bde7027076e30ec4b7",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_EQUAL_GENE_SHARED.npy",
+      "expected_sha256": "d499bd369f96e7c2d9d36d517529fe41083bff3b731cc95692239161f4da8e51",
+      "actual_sha256": "d499bd369f96e7c2d9d36d517529fe41083bff3b731cc95692239161f4da8e51",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_FROZEN_UNIT_ALL.npy",
+      "expected_sha256": "e217be4f1375e5b1bb817cf769295144ad5d905ceb4d292d239242779051d10a",
+      "actual_sha256": "e217be4f1375e5b1bb817cf769295144ad5d905ceb4d292d239242779051d10a",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_UNIT_POSITIVE_SHARED.npy",
+      "expected_sha256": "6c7d578b62c5bea96d2e4f046a84384b2c52bf8061bf859b491d7e98424ae0ad",
+      "actual_sha256": "6c7d578b62c5bea96d2e4f046a84384b2c52bf8061bf859b491d7e98424ae0ad",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_UNIT_SHARED.npy",
+      "expected_sha256": "b507716c29940696eeb63b4dc9deb8334a965aea535fc848990c4b8fec148387",
+      "actual_sha256": "b507716c29940696eeb63b4dc9deb8334a965aea535fc848990c4b8fec148387",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_WITHIN_GENE_COMMON_TRANSCRIPT.npy",
+      "expected_sha256": "89ae78f04f5b6633498d57d9977bbf3b230417a3c23f4ed806307eed20cad95f",
+      "actual_sha256": "89ae78f04f5b6633498d57d9977bbf3b230417a3c23f4ed806307eed20cad95f",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_WITHIN_GENE_MEAN.npy",
+      "expected_sha256": "b6c5719c41c61b3a82422e6f8f7cbafdb0aab08a3538c2ecb456d3b7f03d601f",
+      "actual_sha256": "b6c5719c41c61b3a82422e6f8f7cbafdb0aab08a3538c2ecb456d3b7f03d601f",
+      "byte_identical": true
+    },
+    {
+      "file": "bootstrap_PLATEAU_90_120_WITHIN_GENE_MEDIAN.npy",
+      "expected_sha256": "e8d7bf602d1d5d4c9327a1d9a2912e38106e24234fd891e9efe6a6abb90a1c5f",
+      "actual_sha256": "e8d7bf602d1d5d4c9327a1d9a2912e38106e24234fd891e9efe6a6abb90a1c5f",
+      "byte_identical": true
+    }
+  ],
+  "all_reference_outputs_byte_identical": true,
+  "scope": "Re-execution of the previously independently implemented processed-input audit, with path/verification adapters only. Not new biological replication, raw reconstruction, empirical confidence coverage validation, or independently programmed verification of every bootstrap draw."
+}

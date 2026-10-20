@@ -1,0 +1,4 @@
+analysis	scenario	location	n_original_units	n_excluded_units	n_retained_units	rep1	rep2	estimate	ci_low	ci_high	interval_type	bootstrap_n	seed	strong_support_rule_satisfied
+PRIMARY_PLUS75	baseline	ER	9098	0	9098	0.08288958315897554	0.09574837475801345	0.0893189789584945	-0.01809048301504217	0.22125499909189278	conditional unit-bootstrap percentile	10000	30097775	False
+PRIMARY_PLUS75	baseline	mitochondria	9098	0	9098	0.12485984907221259	-0.039749358710998495	0.04255524518060705	-0.16833563192235543	0.2617552656361019	conditional unit-bootstrap percentile	10000	30097775	False
+PRIMARY_PLUS75	baseline	cytosol	9098	0	9098	0.10060809244433905	0.06793082333224976	0.0842694578882944	-0.010151258823164094	0.17114269619175013	conditional unit-bootstrap percentile	10000	30097775	False

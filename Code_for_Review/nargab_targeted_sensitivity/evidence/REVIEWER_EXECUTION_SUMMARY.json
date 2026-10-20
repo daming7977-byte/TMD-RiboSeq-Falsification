@@ -1,0 +1,16 @@
+{
+  "full_calculation_executed": true,
+  "calculation_runtime_seconds": 9.45899,
+  "variants": 30,
+  "draws_per_variant": 10000,
+  "completed_draws": 300000,
+  "comparison_tables": 13,
+  "maximum_numeric_error": 0.0,
+  "numeric_cells_compared": 553531,
+  "exact_text_cells_compared": 676619,
+  "reference_output_hashes": 35,
+  "all_reference_outputs_byte_identical": true,
+  "verification_wrapper_repaired_after_calculation": true,
+  "statistical_implementation_changed_after_execution": false,
+  "scope": "Full processed-input sensitivity rerun in the reference environment, not raw alignment or biological coverage validation"
+}

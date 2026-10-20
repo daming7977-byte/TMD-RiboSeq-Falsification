@@ -1,0 +1,60 @@
+{
+  "runner_mathematical_functions": [
+    {
+      "function": "effects",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": false
+    },
+    {
+      "function": "gene_effects",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": false
+    },
+    {
+      "function": "binom_quantile",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": false
+    },
+    {
+      "function": "quantile_mc_bounds",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": false
+    },
+    {
+      "function": "weighted_medians",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": false
+    },
+    {
+      "function": "summary_cov",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": false
+    },
+    {
+      "function": "evaluate",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": false
+    },
+    {
+      "function": "analyze",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": true
+    },
+    {
+      "function": "write_outputs",
+      "computation_unchanged": true,
+      "only_reference_path_adjustment": false
+    }
+  ],
+  "original_manifest_rows_preserved": 128,
+  "new_script_rows": 3,
+  "total_manifest_rows": 131,
+  "unchanged_component_notices": [
+    "LICENSE",
+    "LICENSE_SCOPE.md",
+    "MIXED_LICENSE_RECORD_SCOPE.md",
+    "Third_Party_Notices/PLASTID_UPSTREAM_LICENSE.txt",
+    "Third_Party_Notices/TMD_RIBOSEQ_SOURCE_MIT_LICENSE.txt"
+  ],
+  "scope": "Path and verification adapters only; no new statistical specification or original statistical function import."
+}

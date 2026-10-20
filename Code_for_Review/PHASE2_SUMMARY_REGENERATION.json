@@ -1,0 +1,10 @@
+{
+  "available_case": {
+    "source_gene_effect_sha256": "f3eb5233172a50bcbf26922f6bf9fc5194406d4bd42862f3eb3f642016a89206",
+    "summary_sha256": "3e2d6d7c21c2f9590562eff07130dff9d1a103da3d99176e4a1b86defacf3356"
+  },
+  "complete_case": {
+    "source_gene_effect_sha256": "8c90583fdb5fdad0efa80558602ec1606f66088f08e547f5a9f23abed42da637",
+    "summary_sha256": "74af915e8623fd919b6abb05e174b622e7ffa4feee6d57b4af17ceafab253a0b"
+  }
+}

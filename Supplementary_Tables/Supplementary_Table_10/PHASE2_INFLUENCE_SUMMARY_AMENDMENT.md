@@ -1,0 +1,9 @@
+# Phase 2 influence-summary amendment
+
+This controlled revision changes only two ancillary fields in each of four mode/region summaries. It does not alter full estimates, gene-deletion effects, maxima, signs, populations or uncertainty intervals. The original region contract and available-case amendment remain historical records; this document records the later numerical-summary correction.
+
+Round signed deletion effects to 10^-12 log2 using decimal ROUND_HALF_EVEN for these summaries only, then take absolute values. Spearman is the Pearson correlation of average ranks of integer TMD counts and rounded absolute changes. Let K=ceiling(G/10). Select exactly K genes by descending integer count then ascending exact gene identifier (ASCII). Compute their share of summed absolute rounded changes with decimal sums. Report undefined correlations/zero-denominator shares as NA. The identifier rule is deterministic, not a biological ordering. Cutoff-tie ranges and selected identifiers are supplied. Do not select ties by influence or input row order.
+
+The independently audited comparison tolerance is 1e-10 for these summary values. Rounding does not guarantee bit identity across arbitrary floating-point implementations: four of 6,728 saved original/independent effects straddled a rounding boundary, while summary differences were at most 1.203e-13. Exact artifact hashes remain specific to their implementation. Raw effects are never overwritten by rounded values.
+
+Summary-only regeneration (no bootstrap or raw-data processing): from code/ or Code_for_Review/, run `python update_influence_summaries_phase2.py --output-dir ../phase2_summary_check`. It writes a separate directory and uses only bundled gene-deletion tables. The full region runner calls the same policy for future runs. A new full region bootstrap rerun was not executed during Phase 2.

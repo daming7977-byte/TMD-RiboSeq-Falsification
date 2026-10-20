@@ -1,0 +1,13 @@
+# Supplementary Table S13 — exploratory sensitivity analyses
+
+Scientific candidate 1.0.1-rc.2. These are post-reveal, protocol-specified processed-data sensitivities, not independent biological replication or confirmatory inference. The frozen equal-TMD-unit effects and intervals remain unchanged.
+
+`P3_WITHIN_GENE_INDEPENDENT_RESULTS.tsv` supplies all 30 region/estimand combinations, including the frozen reference, changed-population controls, equal-gene density estimands, within-gene mean/median contrasts, and core/extended standardization. Use the exact `region` and `estimand` columns as join keys; columns distinguish mean, replicate-label and compartment quantities, percentile/basic intervals, conditional uncertainty and influence. Full precision is retained; manuscript results round to three decimals and attenuation to one decimal percent.
+
+`P3_WITHIN_GENE_ELIGIBILITY_AND_BALANCE.tsv` records eligibility and retained populations. `evidence/` supplies center-specific weights, strata, balance, missingness, positive-density exclusions, within-gene contrasts, influence, sample identifiers and same-population decompositions. Detailed definitions and limitations are in the protocol and accompanying estimand/composition reports. CDS lengths are not total transcript lengths; input-only coverage is denominator-coupled, not an independent pretreatment covariate.
+
+All new mean estimates are positive, but extended standardization attenuates magnitude by 36.7%/37.4%; replicate-1 intervals include zero. Within-gene inference is limited to the same 17 positive-density genes. Residual continuous imbalance remains. Conditional intervals hold selection and fitted weights fixed and do not establish biological-replicate coverage. No favorable method was selected; percentile and basic intervals are both retained.
+
+The executable portable workflow, processed inputs, pinned requirements, path-adaptation provenance and output verifier are at `../../Code_for_Review/nargab_targeted_sensitivity/README.md`, relative to this table directory. The standalone reports are historical evidence, with separately documented publication path normalization. Original freeze hashes identify the original records; `SHA256.tsv` identifies current packaged bytes. Use the portable Code for Review entry point for execution.
+
+The SHA256 manifest checks every component in this table except itself. These tables and derived data are not author-owned software under MIT; source-data and annotation terms remain distinct. Preparation for release v1.0.1 did not publish files or assign a DOI; the v1.0.0 DOI does not identify this package.

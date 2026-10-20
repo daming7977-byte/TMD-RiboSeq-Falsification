@@ -1,0 +1,7 @@
+{
+  "units": 9098,
+  "libraries": 12,
+  "max_absolute_density_error_primary_vs_secondary": 2.842170943040401e-14,
+  "gate": "PASS",
+  "tolerance": 1e-10
+}

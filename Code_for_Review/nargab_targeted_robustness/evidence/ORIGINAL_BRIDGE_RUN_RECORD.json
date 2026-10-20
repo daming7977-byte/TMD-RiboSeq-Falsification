@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "elapsed_seconds": 5.475426124990918,
+  "script_sha256": "2626dfabc4fbbc7eb1710c65b9cb3d059d29f018b289ec564e5012794d245728",
+  "inputs": 29,
+  "bootstrap_n": 10000,
+  "batch": 200,
+  "seeds": {
+    "PLATEAU_90_120": 30097890,
+    "BROAD_60_120": 30097860
+  },
+  "threads": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1",
+  "baseline_point_tolerance": 1e-10,
+  "baseline_interval_tolerance": 1e-10,
+  "point_gates": "PASS",
+  "baseline_CI_gates": "PASS",
+  "no_BAM_processing": true
+}

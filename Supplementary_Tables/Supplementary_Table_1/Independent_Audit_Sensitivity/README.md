@@ -1,0 +1,7 @@
+# Independent conditional primary sensitivity
+
+These previously completed processed-data audit results supplement, and do not replace, the frozen primary tables. Both gene-connected and gene-plus-shared-position percentile intervals are supplied for all three compartments, together with basic and three-compartment familywise alternatives. The latter diagnostics were chosen after the cytosolic threshold crossing. Seeds are 202610150101 and 202610150102, with 10,000 draws. Monte Carlo bounds concern simulation precision, not biological confidence coverage. The marginal familywise interval level is 98.3333%; it is not an assertion that the universal intersection hypothesis required Bonferroni correction.
+
+All 9,098 units and original point weighting are retained. The component counts are 3,429 and 3,427. Gene ambiguity joins components; shared-position connections additionally use same-strand unmasked real or pseudo positions. Resampling retains all library records in a component. These models do not establish culture/batch independence or capture all cross-gene dependence. The supplied audit specifications preserve their original chronology and input boundary. Phase 2 copied these results and did not rerun bootstrap or read-level analysis.
+
+The original complete audit workspace retains independent scripts, input hashes and draws; these summarized additions do not make the package a turnkey raw-to-statistic workflow.

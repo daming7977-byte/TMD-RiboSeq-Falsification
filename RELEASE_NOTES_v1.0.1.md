@@ -1,0 +1,13 @@
+# v1.0.1 — P3 reproducibility materials
+
+This software/data package supports “Falsification tests of TMD-relative ribosome profiles identify topology-associated compartmental differences” by Ming Li. The public release identifier is v1.0.1; the supported frozen scientific version remains 1.0.1-rc.2. Release preparation did not change executable scientific code, data, calculations, figures or the manuscript.
+
+The package includes the controlled revision’s processed inputs and saved outputs, S16/S13 within-gene and composition sensitivities, S17/S14 annotation-overlap exclusion and matched-population operational UMI-like collapse workflows, pinned environment documentation, and historical runner/source-record provenance. These exploratory sensitivities do not replace the original frozen inference or establish independent biological replication. This release is not a new biological analysis.
+
+Extract all three sibling directories together: `Code_for_Review/`, `Source_Data/`, and `Supplementary_Tables/`. Start with the root README and `Code_for_Review/REPRODUCE_NARGAB.md`. S16 and S17 have separate documented entry points. Optional annotation regeneration requires the externally obtained exact Ensembl release 104 GTF; the included density-level calculations do not require raw reads. Complete raw-data reproduction, molecular-UMI validation and comparable footprint-length sensitivity are not claimed. The final Figure 3 submission artwork is separate; the historical SVG and terminology-only helper are included.
+
+Historical v1.0.0 remains unchanged at https://github.com/daming7977-byte/TMD-RiboSeq-Falsification/releases/tag/v1.0.0 and https://doi.org/10.5281/zenodo.22658221. The existing Zenodo concept DOI, https://doi.org/10.5281/zenodo.22658220, identifies the version family. A new version DOI is to be assigned by Zenodo within that family; none is preassigned here. Check the actual platform record after publication.
+
+MIT and BSD-3-Clause apply to their identified software components; data and derived records retain source terms. They are not alternative licenses for the aggregate archive. Consult `COMPONENT_RIGHTS.md`, `Code_for_Review/FILE_LEVEL_CODE_LICENSE_MANIFEST.tsv` and the preserved notices. Confidential related manuscripts, editorial material and internal AI review decisions are excluded.
+
+The canonical asset is `TMD-RiboSeq-Falsification-v1.0.1.zip`, accompanied by `SHA256SUMS.txt`. Its file inventory is `RELEASE_FILE_MANIFEST.tsv`; candidate-to-release provenance is in `RELEASE_SOURCE_IDENTITY.tsv`. Platform-generated source archives may differ in compression and enclosing directory; compare their extracted file content, not their ZIP digest, with the canonical asset.

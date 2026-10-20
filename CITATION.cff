@@ -1,9 +1,11 @@
 cff-version: 1.2.0
-message: "Cite the archived v1.0.0 release. This mixed-content package has component-specific rights; see LICENSE_SCOPE.md and the file-level code license manifest. Software licenses do not relicense data, intermediates or artwork."
+message: "Cite this software release as v1.0.1. Obtain any version DOI from the verified Zenodo record; the historical v1.0.0 DOI does not identify these files. Component-specific licenses and source-data terms apply."
 title: "Falsification tests of TMD-relative ribosome profiles identify topology-associated compartmental differences"
 type: software
-version: 1.0.0
+version: "v1.0.1"
+repository-code: "https://github.com/daming7977-byte/TMD-RiboSeq-Falsification"
 authors:
   - family-names: Li
     given-names: Ming
-    affiliation: Kyoto University
+    affiliation: "Department of Chemistry, Graduate School of Science, Kyoto University, Kyoto 606-8502, Japan"
+    orcid: "https://orcid.org/0009-0008-9932-2574"

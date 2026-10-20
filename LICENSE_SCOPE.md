@@ -1,3 +1,0 @@
-# License scope
-
-MIT applies only to original code authored by Ming Li or generated/modified under his direction, under the recorded author authorization. TMD-RiboSeq source modules retain their original MIT copyright/license; plastid-derived material retains the supplied BSD-3-Clause notice; vendored PyYAML retains its original MIT notice. No third-party material is relicensed. Data and derived intermediates retain their documented source-data terms and are not licensed as author-owned software. See code/FILE_LEVEL_CODE_LICENSE_MANIFEST.tsv and code/Third_Party_Notices. Source attribution is not a claim of copyright ownership. Public distribution remains subject to the separate release gate.

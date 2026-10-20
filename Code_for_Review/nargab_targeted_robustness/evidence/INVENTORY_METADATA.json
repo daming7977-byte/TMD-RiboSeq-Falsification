@@ -1,0 +1,42 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "elapsed_seconds": 15.168510913848877,
+  "selected_pair_rows": 31560,
+  "inventory_rows": 108053,
+  "target_transcripts": 3477,
+  "invalid_target_path_window_records": 0,
+  "gtf_sha256": "f3de2bccc02877709272a0ce66af59a2922d407a4076541bc5a65c9d3518581e",
+  "distinct_inspection_calls": {
+    "hits": 4714,
+    "misses": 58415,
+    "maxsize": null,
+    "currsize": 58415
+  },
+  "pair_summary": {
+    "PRIMARY_PLUS75": {
+      "pairs": 9098,
+      "units": 9098,
+      "genes": 3460,
+      "affected_pairs": 348,
+      "affected_units": 348,
+      "affected_genes": 191
+    },
+    "PLATEAU_90_120": {
+      "pairs": 14997,
+      "units": 6092,
+      "genes": 1750,
+      "affected_pairs": 513,
+      "affected_units": 215,
+      "affected_genes": 99
+    },
+    "BROAD_60_120": {
+      "pairs": 29927,
+      "units": 7558,
+      "genes": 1848,
+      "affected_pairs": 1021,
+      "affected_units": 279,
+      "affected_genes": 114
+    }
+  }
+}

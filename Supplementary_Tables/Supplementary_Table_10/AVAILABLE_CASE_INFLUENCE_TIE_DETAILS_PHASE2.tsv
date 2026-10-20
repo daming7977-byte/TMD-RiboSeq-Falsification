@@ -1,0 +1,3 @@
+region	spearman_total_units_vs_absolute_change	top_TMD_count_decile_share_of_total_absolute_change	K	count_cutoff	cutoff_tied_genes	slots_from_cutoff_tie	tie_share_min	tie_share_max	rounded_zero_n
+PLATEAU_90_120	-0.05989508131914803	0.06414318063340163	175	7	63	58	0.052192362817891885	0.06475198027728907	548
+BROAD_60_120	-0.05713942203130644	0.08468817642195009	185	8	75	69	0.04870670415989353	0.0863494913305418	543

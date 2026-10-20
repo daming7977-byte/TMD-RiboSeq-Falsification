@@ -1,0 +1,16 @@
+{
+  "verified_input_files": 17,
+  "geometry_count": 157184,
+  "five_center_prefilter_rows": 39680,
+  "eligible_region_center_units": 29927,
+  "unique_genes": 1848,
+  "density_shape": [
+    29927,
+    24
+  ],
+  "previous_independent_density_max_abs_error": 0.0,
+  "protocol_sha256": "e573192d8ea67a56da558420efa6086dbabf13f8a20212e2bd505730eedf6961",
+  "compartment_mapping": "PASS",
+  "exact_transcript_anchor_linkage": "PASS",
+  "finite_nonnegative_density": "PASS"
+}

@@ -1,0 +1,36 @@
+{
+  "metadata_purpose": "Preparation record and proposed deposit fields; not a validated API payload or proof of publication",
+  "status_at_preparation": "PREPARED_LOCALLY_AWAITING_RELEASE_AUTHORIZATION",
+  "release_version": "v1.0.1",
+  "scientific_version": "1.0.1-rc.2",
+  "source_candidate": "1.0.1-rc.2+public-candidate.20261019.2",
+  "title": "Falsification tests of TMD-relative ribosome profiles identify topology-associated compartmental differences",
+  "resource_type": "software",
+  "creators": [
+    {
+      "name": "Li, Ming",
+      "given_name": "Ming",
+      "family_name": "Li",
+      "orcid": "0009-0008-9932-2574",
+      "affiliation": "Department of Chemistry, Graduate School of Science, Kyoto University, Kyoto 606-8502, Japan"
+    }
+  ],
+  "description": "Reproducibility materials for the manuscript \"Falsification tests of TMD-relative ribosome profiles identify topology-associated compartmental differences\". Public software release v1.0.1 preserves scientific version 1.0.1-rc.2 and includes the frozen processed-input calculations, source tables, environments, S16/S13 within-gene/composition sensitivities, S17/S14 annotation-overlap exclusion and matched-population operational UMI-like collapse workflows, and documented historical runner provenance. The sensitivities are post-reveal and exploratory. This package does not establish independent biological replication, validated molecular-UMI deduplication, comparable footprint-length sensitivity or complete raw-read-to-result reproduction. The exact Ensembl release 104 GTF is an external dependency for optional annotation regeneration; density-level replay uses included processed inputs. MIT applies only to software identified as MIT in Code_for_Review/FILE_LEVEL_CODE_LICENSE_MANIFEST.tsv, including documented author-owned code and inherited TMD-RiboSeq and PyYAML components with their original notices. The identified plastid-derived component retains BSD-3-Clause. These licenses apply to their respective components, not as alternative licenses for the complete archive. Data, annotations, processed intermediates and scientific outputs retain applicable source terms; no blanket MIT license or additional data reuse permission is granted. Where source records specify no additional reuse license, none is asserted here. Consult COMPONENT_RIGHTS.md, Code_for_Review/LICENSE_SCOPE.md, the file-level manifest and preserved third-party notices.",
+  "repository_url": "https://github.com/daming7977-byte/TMD-RiboSeq-Falsification",
+  "planned_git_tag": "v1.0.1",
+  "published_git_tag": null,
+  "release_commit": null,
+  "publication_date": null,
+  "current_version_doi": null,
+  "existing_zenodo_version_doi": "10.5281/zenodo.22658221",
+  "existing_zenodo_concept_doi": "10.5281/zenodo.22658220",
+  "zenodo_version_strategy": "New version within the existing concept family; verify owner access, existing drafts and GitHub integration mapping before selecting one publication route. Do not create an unrelated new upload or a duplicate automated/manual deposit.",
+  "component_licenses": [
+    "MIT",
+    "BSD-3-Clause"
+  ],
+  "custom_rights_title": "Component-specific software licenses and source-data rights",
+  "custom_rights_description": "MIT applies only to software identified as MIT in Code_for_Review/FILE_LEVEL_CODE_LICENSE_MANIFEST.tsv, including documented author-owned code and inherited TMD-RiboSeq and PyYAML components with their original notices. The identified plastid-derived component retains BSD-3-Clause. These licenses apply to their respective components, not as alternative licenses for the complete archive. Data, annotations, processed intermediates and scientific outputs retain applicable source terms; no blanket MIT license or additional data reuse permission is granted. Where source records specify no additional reuse license, none is asserted here. Consult COMPONENT_RIGHTS.md, Code_for_Review/LICENSE_SCOPE.md, the file-level manifest and preserved third-party notices.",
+  "rights_scope": "Component-specific, not alternative licenses for the aggregate archive; see preserved notices and source terms.",
+  "archival_policy_assessment": "Strict combined reading of current published instructions: preserve the exact manuscript-supporting release on GitHub and Zenodo, and additionally obtain a Figshare archive DOI before initial submission under the NAR software guidance adopted by NARGAB. This is a policy interpretation, not editorial confirmation. Zenodo-only completion is not recorded as full journal-policy compliance. No repository action has occurred."
+}

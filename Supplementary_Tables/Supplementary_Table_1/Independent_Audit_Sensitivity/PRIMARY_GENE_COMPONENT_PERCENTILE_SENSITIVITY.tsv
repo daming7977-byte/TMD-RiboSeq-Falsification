@@ -1,0 +1,7 @@
+scope	variant	quantity	estimate	lower	upper	seed	B	estimand	n_components	max_units_per_component	interpretation	max_genes_per_component	active_gene_center_class_min
+primary	gene_connected	ER	0.08931897895849872	-0.0326904068620709	0.22559554118530922	202610150101	10000	original_equal_unit	3429	24.0	conditional_cluster_interval_not_biological_replication		
+primary	gene_connected	mitochondria	0.04255524518060483	-0.16942542860070026	0.2969156173593871	202610150101	10000	original_equal_unit	3429	24.0	conditional_cluster_interval_not_biological_replication		
+primary	gene_connected	cytosol	0.08426945788829521	0.002534423164648871	0.18719283667123263	202610150101	10000	original_equal_unit	3429	24.0	conditional_cluster_interval_not_biological_replication		
+primary	gene_and_position_overlap	ER	0.08931897895849872	-0.03354565509085583	0.22727908140303374	202610150102	10000	original_equal_unit	3427	24.0	conditional_cluster_interval_not_biological_replication		
+primary	gene_and_position_overlap	mitochondria	0.04255524518060483	-0.17250926088204752	0.2958063397604853	202610150102	10000	original_equal_unit	3427	24.0	conditional_cluster_interval_not_biological_replication		
+primary	gene_and_position_overlap	cytosol	0.08426945788829521	0.0014640727067319226	0.1885343514492739	202610150102	10000	original_equal_unit	3427	24.0	conditional_cluster_interval_not_biological_replication		
